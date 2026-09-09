@@ -34,3 +34,49 @@
   --tr-fast: 0.2s ease;
   --tr-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* --------------------------------------------------------------------------
+   Reset & Base Setup
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-parchment);
+  color: var(--c-cowhide-cocoa);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-parchment);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(232, 209, 167, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(132, 89, 43, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(244, 234, 216, 0.98) 0%, rgba(235, 221, 195, 0.95) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Global Layout Containers
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-narrow {
+  max-width: 960px;
+}
+
