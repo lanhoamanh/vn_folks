@@ -1,0 +1,36 @@
+/* ==========================================================================
+   VN FOLKS — Digital Folklore Archive
+   Main Stylesheet & Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  /* Official Palette */
+  --c-golden-butter: #E8D1A7;
+  --c-toasted-caramel: #84592B;
+  --c-spiced-wine: #743014;
+  --c-olive-harvest: #9D9167;
+  --c-cowhide-cocoa: #442D1C;
+
+  /* Atmospheric Parchment & Dark Tones */
+  --bg-parchment: #F4EAD8;
+  --bg-parchment-warm: #EBDDC3;
+  --bg-dark-archive: #1B110A;
+  --bg-dark-card: #251810;
+  --bg-modal-overlay: rgba(18, 10, 6, 0.88);
+
+  /* Typography Variables */
+  --font-display: 'Creepster', cursive, serif;
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'EB Garamond', 'Times New Roman', serif;
+
+  /* Borders & Dividers */
+  --border-fine: 1px solid rgba(132, 89, 43, 0.28);
+  --border-gold: 1px solid rgba(232, 209, 167, 0.35);
+  --border-wine: 1px solid rgba(116, 48, 20, 0.4);
+
+  /* Transitions */
+  --tr-fast: 0.2s ease;
+  --tr-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
