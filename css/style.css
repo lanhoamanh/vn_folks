@@ -248,3 +248,112 @@ body.dark-mode .mobile-nav-links a {
   color: var(--c-golden-butter);
 }
 
+/* --------------------------------------------------------------------------
+   Typography & Atmospheric Elements
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--c-cowhide-cocoa);
+  line-height: 1.25;
+}
+
+.display-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--c-cowhide-cocoa);
+  opacity: 0.9;
+}
+
+/* Ornamental Horizontal Divider */
+.ornamental-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 480px;
+  opacity: 0.5;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--c-toasted-caramel);
+}
+
+/* Buttons */
+.btn-archive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.85rem 2.2rem;
+  border: 1px solid var(--c-cowhide-cocoa);
+  background-color: transparent;
+  color: var(--c-cowhide-cocoa);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--tr-smooth);
+}
+
+.btn-archive::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid transparent;
+  transition: border-color var(--tr-smooth);
+}
+
+.btn-archive:hover {
+  background-color: var(--c-cowhide-cocoa);
+  color: var(--c-golden-butter);
+  box-shadow: 0 6px 18px rgba(68, 45, 28, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-archive:hover::before {
+  border-color: rgba(232, 209, 167, 0.5);
+}
+
+.btn-archive.btn-wine {
+  border-color: var(--c-spiced-wine);
+  color: var(--c-spiced-wine);
+}
+
+.btn-archive.btn-wine:hover {
+  background-color: var(--c-spiced-wine);
+  color: var(--c-golden-butter);
+}
+
+.btn-archive.btn-gold {
+  border-color: var(--c-golden-butter);
+  color: var(--c-golden-butter);
+}
+
+.btn-archive.btn-gold:hover {
+  background-color: var(--c-golden-butter);
+  color: var(--c-cowhide-cocoa);
+}
+
