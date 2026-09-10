@@ -1,0 +1,61 @@
+/* ==========================================================================
+   VN FOLKS — Page Components (Explore, Stories, About & Modals)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Page Header Banner
+   -------------------------------------------------------------------------- */
+.archive-page-header {
+  padding: 4.5rem 0 3.5rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid rgba(132, 89, 43, 0.25);
+  background-color: var(--bg-parchment-warm);
+}
+
+.archive-page-header.dark-banner {
+  background-color: var(--bg-dark-archive);
+  border-bottom: 1px solid rgba(232, 209, 167, 0.2);
+  color: var(--c-golden-butter);
+}
+
+.archive-page-header.dark-banner h1 {
+  color: var(--c-golden-butter);
+}
+
+.archive-page-header.dark-banner .page-subtitle {
+  color: rgba(232, 209, 167, 0.85);
+}
+
+.page-category-tag {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--c-spiced-wine);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.dark-banner .page-category-tag {
+  color: var(--c-golden-butter);
+  opacity: 0.9;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-style: italic;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
