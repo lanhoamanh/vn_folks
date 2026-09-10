@@ -539,3 +539,81 @@ p {
   opacity: 0.85;
   margin-bottom: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Footer Section
+   -------------------------------------------------------------------------- */
+.site-footer {
+  margin-top: auto;
+  background-color: var(--bg-dark-archive);
+  color: var(--c-golden-butter);
+  border-top: 2px solid var(--c-spiced-wine);
+  padding: 4.5rem 0 2.5rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(232, 209, 167, 0.15);
+}
+
+.footer-brand h4 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.2em;
+  color: var(--c-golden-butter);
+  margin-bottom: 0.8rem;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+  max-width: 440px;
+}
+
+.footer-nav h5,
+.footer-info h5 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-golden-butter);
+  margin-bottom: 1.2rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: rgba(232, 209, 167, 0.75);
+  transition: color var(--tr-fast);
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-disclaimer-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
