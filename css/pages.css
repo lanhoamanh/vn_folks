@@ -403,3 +403,173 @@ body.dark-stories-page {
   opacity: 0.9;
   margin-bottom: 1.4rem;
 }
+
+/* --------------------------------------------------------------------------
+   INTERACTIVE DOSSIER / MODAL SYSTEM
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-modal-overlay);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  overflow-y: auto;
+  padding: 2.5rem 1rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window {
+  background-color: var(--bg-parchment);
+  border: 2px solid var(--c-toasted-caramel);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.35s ease forwards;
+}
+
+.dark-modal {
+  background-color: #1c120b;
+  border-color: var(--c-golden-butter);
+  color: var(--c-golden-butter);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(68, 45, 28, 0.15);
+  border: 1px solid var(--c-toasted-caramel);
+  color: var(--c-cowhide-cocoa);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--tr-fast);
+  z-index: 10;
+}
+
+.dark-modal .modal-close-btn {
+  background-color: rgba(232, 209, 167, 0.15);
+  border-color: var(--c-golden-butter);
+  color: var(--c-golden-butter);
+}
+
+.modal-close-btn:hover {
+  background-color: var(--c-spiced-wine);
+  color: #fff;
+}
+
+.modal-header-section {
+  padding: 2.8rem 2.8rem 1.8rem;
+  border-bottom: 1px solid rgba(132, 89, 43, 0.3);
+}
+
+.dark-modal .modal-header-section {
+  border-bottom-color: rgba(232, 209, 167, 0.2);
+}
+
+.modal-pretitle {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-spiced-wine);
+  margin-bottom: 0.4rem;
+}
+
+.dark-modal .modal-pretitle {
+  color: var(--c-toasted-caramel);
+}
+
+.modal-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  color: var(--c-cowhide-cocoa);
+}
+
+.dark-modal .modal-title {
+  color: var(--c-golden-butter);
+}
+
+.modal-viet-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.modal-body-content {
+  padding: 2.5rem 2.8rem;
+  max-height: 68vh;
+  overflow-y: auto;
+}
+
+/* Dossier Section Block */
+.dossier-block {
+  margin-bottom: 2.4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(132, 89, 43, 0.2);
+}
+
+.dark-modal .dossier-block {
+  border-bottom-color: rgba(232, 209, 167, 0.15);
+}
+
+.dossier-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.dossier-heading {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-spiced-wine);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dark-modal .dossier-heading {
+  color: var(--c-golden-butter);
+}
+
+.dossier-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.dark-modal .dossier-text {
+  color: rgba(232, 209, 167, 0.9);
+}
+
+.dossier-block strong,
+.dossier-block b {
+  font-weight: 700;
+  color: var(--c-spiced-wine);
+}
+
+.dark-modal .dossier-block strong,
+.dark-modal .dossier-block b {
+  color: var(--c-golden-butter);
+}
