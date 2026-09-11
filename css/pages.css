@@ -573,3 +573,116 @@ body.dark-stories-page {
 .dark-modal .dossier-block b {
   color: var(--c-golden-butter);
 }
+
+/* Structured Numbered & Bulleted Lists */
+.dossier-numbered-list {
+  list-style: decimal;
+  margin: 1.2rem 0 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dossier-numbered-item {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--c-cowhide-cocoa);
+}
+
+.dark-modal .dossier-numbered-item {
+  color: rgba(232, 209, 167, 0.92);
+}
+
+.dossier-bullet-list {
+  list-style: disc;
+  margin: 1.2rem 0 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.dossier-bullet-item {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.dossier-sources-list {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.dossier-sources-list li {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.dossier-sources-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 1px;
+  background-color: var(--c-toasted-caramel);
+}
+
+.dark-modal .dossier-sources-list li::before {
+  background-color: var(--c-golden-butter);
+}
+
+/* --------------------------------------------------------------------------
+   Article Bottom Illustration Area (Explore & Stories)
+   -------------------------------------------------------------------------- */
+.article-bottom-section {
+  margin-top: 3.2rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid rgba(132, 89, 43, 0.25);
+}
+
+.dark-modal .article-bottom-section {
+  border-top-color: rgba(232, 209, 167, 0.18);
+}
+
+/* Styled Empty Placeholder when no image URL is provided */
+.article-image-placeholder {
+  background: rgba(232, 209, 167, 0.22);
+  border: 2px dashed rgba(132, 89, 43, 0.38);
+  border-radius: 8px;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  transition: border-color var(--tr-smooth), background-color var(--tr-smooth);
+}
+
+.dark-modal .article-image-placeholder {
+  background: rgba(25, 16, 11, 0.7);
+  border-color: rgba(232, 209, 167, 0.28);
+}
+
+.placeholder-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-toasted-caramel);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.dark-modal .placeholder-badge {
+  color: var(--c-golden-butter);
+  opacity: 0.85;
+}
+
+.placeholder-heading {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--c-cowhide-cocoa);
+  margin-bottom: 0.6rem;
+}
