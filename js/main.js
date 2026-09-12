@@ -133,3 +133,95 @@ function renderArticleBottomMedia(imageUrl, articleTitle) {
   `;
 }
 
+/* --------------------------------------------------------------------------
+   4. Explore Page Card Generation & Interactions
+   -------------------------------------------------------------------------- */
+function initExploreCards() {
+  const exploreContainer = document.getElementById('explore-grid-container');
+  if (!exploreContainer || typeof VNFOLKS_DATA === 'undefined') return;
+
+  exploreContainer.innerHTML = '';
+
+  VNFOLKS_DATA.explore.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'explore-card';
+    card.setAttribute('data-id', item.id);
+
+    card.innerHTML = `
+      <div class="explore-card-media">
+        <img src="${item.image}" alt="${item.title} folklore illustration" loading="lazy">
+        <span class="card-badge">${item.badge}</span>
+      </div>
+      <div class="explore-card-content">
+        <span class="card-viet-name">${item.vietnameseName}</span>
+        <h3 class="explore-card-title">${item.title}</h3>
+        <p class="explore-card-desc">${item.summary}</p>
+        <div class="card-action-bar">
+          <button class="btn-discover" data-explore-id="${item.id}" aria-label="Discover ${item.title}">
+            <span>Discover Archive</span>
+          </button>
+        </div>
+      </div>
+    `;
+
+    exploreContainer.appendChild(card);
+  });
+
+  // Attach event listener to discover buttons
+  exploreContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-discover');
+    if (!btn) return;
+    const itemId = btn.getAttribute('data-explore-id');
+    openExploreModal(itemId);
+  });
+}
+
+function openExploreModal(itemId) {
+  const item = VNFOLKS_DATA.explore.find(i => i.id === itemId);
+  if (!item) return;
+
+  const modalOverlay = document.getElementById('explore-modal');
+  const modalContainer = modalOverlay.querySelector('.modal-window');
+
+  modalContainer.innerHTML = `
+    <button class="modal-close-btn" aria-label="Close dossier">&times;</button>
+    <div class="modal-header-section">
+      <span class="modal-pretitle">${item.badge}</span>
+      <h2 class="modal-title">${item.title}</h2>
+      <p class="modal-viet-subtitle">${item.vietnameseName} &mdash; ${item.subtitle}</p>
+    </div>
+    <div class="modal-body-content">
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${item.belief.heading}</h4>
+        ${formatDossierContent(item.belief.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${item.culturalStory.heading}</h4>
+        ${formatDossierContent(item.culturalStory.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${item.historicalContext.heading}</h4>
+        ${formatDossierContent(item.historicalContext.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${item.scienceSays.heading}</h4>
+        ${formatDossierContent(item.scienceSays.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${item.whyItMatters.heading}</h4>
+        ${formatDossierContent(item.whyItMatters.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">REFERENCES &amp; SOURCES</h4>
+        <ul class="dossier-sources-list">
+          ${item.sources.map(src => `<li>${escapeHtml(src)}</li>`).join('')}
+        </ul>
+      </div>
+      ${renderArticleBottomMedia(item.articleBottomImage, item.title)}
+    </div>
+  `;
+
+  modalOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
