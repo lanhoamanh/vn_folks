@@ -92,3 +92,44 @@ function formatDossierContent(content) {
     return `<p class="dossier-text">${block}</p>`;
   }).join('');
 }
+
+/* --------------------------------------------------------------------------
+   3. Article Bottom Illustration Component
+   -------------------------------------------------------------------------- */
+function renderArticleBottomMedia(imageUrl, articleTitle) {
+  const isPlaceholder = !imageUrl || imageUrl.trim() === '' || imageUrl.trim() === 'PASTE_IMAGE_URL_HERE';
+  const cleanTitle = escapeHtml(articleTitle);
+
+  if (isPlaceholder) {
+    return `
+      <div class="article-bottom-section">
+        <div class="article-image-placeholder" role="region" aria-label="Illustration placeholder for ${cleanTitle}">
+          <div class="placeholder-content">
+            <span class="placeholder-badge">ARCHIVE ILLUSTRATION AREA</span>
+            <h5 class="placeholder-heading">${cleanTitle}</h5>
+            <p class="placeholder-desc">Dedicated illustration image placeholder. Replace <code>articleBottomImage</code> in <code>js/archive-data.js</code> or paste your image URL below:</p>
+            <div class="placeholder-code-container">
+              <code class="placeholder-code-snippet">&lt;img src="PASTE_IMAGE_URL_HERE" alt="Illustration for ${cleanTitle}"&gt;</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="article-bottom-section">
+      <figure class="article-bottom-figure">
+        <img 
+          src="${escapeHtml(imageUrl)}" 
+          alt="Illustration for ${cleanTitle}" 
+          class="article-bottom-image" 
+          loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=\\'article-image-placeholder\\'><div class=\\'placeholder-content\\'><span class=\\'placeholder-badge\\'>ILLUSTRATION NOT FOUND</span><p class=\\'placeholder-desc\\'>The specified image URL could not be loaded. Please check the path in <code>js/archive-data.js</code>.</p></div></div>';"
+        >
+        <figcaption class="article-bottom-caption">Archive Illustration: ${cleanTitle}</figcaption>
+      </figure>
+    </div>
+  `;
+}
+
