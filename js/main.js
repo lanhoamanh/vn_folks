@@ -225,3 +225,112 @@ function openExploreModal(itemId) {
   document.body.style.overflow = 'hidden';
 }
 
+/* --------------------------------------------------------------------------
+   5. Stories Page Card Generation & Filtering
+   -------------------------------------------------------------------------- */
+function initStoriesCards() {
+  const storiesContainer = document.getElementById('stories-grid-container');
+  if (!storiesContainer || typeof VNFOLKS_DATA === 'undefined') return;
+
+  renderStories('all');
+
+  // Filter Buttons
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const category = btn.getAttribute('data-filter');
+      renderStories(category);
+    });
+  });
+
+  // Story click handler
+  storiesContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-read-story');
+    if (!btn) return;
+    const storyId = btn.getAttribute('data-story-id');
+    openStoryModal(storyId);
+  });
+}
+
+function renderStories(filterCategory) {
+  const storiesContainer = document.getElementById('stories-grid-container');
+  if (!storiesContainer) return;
+
+  const filtered = filterCategory === 'all' 
+    ? VNFOLKS_DATA.stories 
+    : VNFOLKS_DATA.stories.filter(s => s.category === filterCategory);
+
+  storiesContainer.innerHTML = '';
+
+  filtered.forEach(story => {
+    const card = document.createElement('article');
+    card.className = 'story-card';
+    card.setAttribute('data-id', story.id);
+    card.setAttribute('data-category', story.category);
+
+    card.innerHTML = `
+      <div class="story-card-media">
+        <img src="${story.image}" alt="${story.name} legend illustration" loading="lazy">
+      </div>
+      <div class="story-card-content">
+        <span class="story-region-tag">${story.region}</span>
+        <h3 class="story-card-title">${story.name}</h3>
+        <span class="story-card-epithet">${story.epithet}</span>
+        <p class="story-card-desc">${story.atmosphericSummary}</p>
+        <div class="card-action-bar">
+          <button class="btn-read-story" data-story-id="${story.id}" aria-label="Read story of ${story.name}">
+            <span>Read The Story</span>
+          </button>
+        </div>
+      </div>
+    `;
+
+    storiesContainer.appendChild(card);
+  });
+}
+
+function openStoryModal(storyId) {
+  const story = VNFOLKS_DATA.stories.find(s => s.id === storyId);
+  if (!story) return;
+
+  const modalOverlay = document.getElementById('story-modal');
+  const modalContainer = modalOverlay.querySelector('.modal-window');
+
+  modalContainer.innerHTML = `
+    <button class="modal-close-btn" aria-label="Close story dossier">&times;</button>
+    <div class="modal-header-section">
+      <span class="modal-pretitle">${story.region}</span>
+      <h2 class="modal-title">${story.name}</h2>
+      <p class="modal-viet-subtitle">${story.vietnameseName} &mdash; ${story.epithet}</p>
+    </div>
+    <div class="modal-body-content">
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${story.legend.heading}</h4>
+        ${formatDossierContent(story.legend.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${story.origins.heading}</h4>
+        ${formatDossierContent(story.origins.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${story.culturalContext.heading}</h4>
+        ${formatDossierContent(story.culturalContext.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${story.whatReflects.heading}</h4>
+        ${formatDossierContent(story.whatReflects.content)}
+      </div>
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${story.relatedBeliefs.heading}</h4>
+        ${formatDossierContent(story.relatedBeliefs.content)}
+      </div>
+      ${renderArticleBottomMedia(story.articleBottomImage, story.name)}
+    </div>
+  `;
+
+  modalOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
