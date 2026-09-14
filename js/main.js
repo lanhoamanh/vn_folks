@@ -334,3 +334,31 @@ function openStoryModal(storyId) {
   document.body.style.overflow = 'hidden';
 }
 
+/* --------------------------------------------------------------------------
+   6. Modal Closing Engine
+   -------------------------------------------------------------------------- */
+function initModalSystem() {
+  const modals = document.querySelectorAll('.modal-overlay');
+
+  modals.forEach(modal => {
+    // Click close button or backdrop
+    modal.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-close-btn') || e.target === modal) {
+        closeAllModals();
+      }
+    });
+  });
+
+  // ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeAllModals();
+    }
+  });
+}
+
+function closeAllModals() {
+  const modals = document.querySelectorAll('.modal-overlay');
+  modals.forEach(modal => modal.classList.remove('active'));
+  document.body.style.overflow = '';
+}
