@@ -76,5 +76,77 @@ const VNFOLKS_DATA = {
         "Nguyễn Từ Chi (1996). Góp phần nghiên cứu văn hóa và tộc người."
       ]
     },
+     {
+      id: "animal-omens",
+      title: "Animal Omens & Instincts",
+      vietnameseName: "Điềm Báo Từ Động Vật",
+      subtitle: "The barn owl's cry, barking at empty spaces, and serpent omens.",
+      summary: "From the ominous call of the barn owl to dogs barking at vacant thresholds, traditional folklore interpreted animal behaviors as prophecies—blending genuine animal sensory biology with human confirmation bias.",
+      badge: "Ethology & Psychology",
+      category: "nature",
+      image: "assets/images/explore-animal-omens.svg",
+      articleBottomImage: "https://media.chuabavang.com/files/content/2025/01/20/chim-lon-0843.jpg",
+      belief: {
+        heading: "THE BELIEF",
+        content: "Rural Vietnamese folklore is rich with interpretations of animal behavior as omens (điềm báo). The mournful, screeching call of the barn owl (chim lợn) flying over a village at night was widely feared as an omen of imminent death or severe tragedy in the nearest household. Similarly, a dog howling mournfully while staring intently at a seemingly empty corner was thought to see invisible wandering spirits, and a snake crossing one's path or entering a house carried omens ranging from ancestral warnings to impending financial loss."
+      },
+      culturalStory: {
+        heading: "THE CULTURAL STORY",
+        content: "Generations of village elders warned youths to observe the wildlife around the bamboo groves. If a barn owl perched on a roof ridge and called out seven or nine times (symbolizing the traditional folk concept of seven souls for men or nine for women), villagers would burn incense, light lamps, and prepare for sorrowful news. Conversely, the swallow (chim én) nesting under eaves signaled prosperity and domestic peace. These lore frameworks created an intricate web of symbolic signs, where every wild creature carried messages from the unseen world."
+      },
+      historicalContext: {
+        heading: "HISTORICAL CONTEXT",
+        content: "In pre-modern Vietnam, villages were directly bordered by dense subtropical forests, marshlands, and river estuaries. Humans lived in acute intimacy with wildlife. Because animals routinely detected natural disasters, changes in humidity, or approaching predators before human eyes could, villagers naturally expanded their practical observations into generalized metaphysical prophecies. When a tragic event followed an unusual animal sighting, oral storytelling preserved the memory while ordinary uneventful sightings were naturally forgotten."
+      },
+      scienceSays: {
+        heading: "WHAT SCIENCE SAYS",
+        content: "Modern animal ethology and sensory biology reveal that many 'supernatural' animal behaviors stem from sensory capabilities far exceeding human biology:\n\n1. <strong>The Barn Owl (Tyto alba):</strong> Barn owls possess exceptional low-frequency auditory acuity and acute olfactory or hunting sensitivity. Research suggests owls are opportunistic scavengers and nocturnal hunters drawn to vermin populations that frequently concentrate around decaying organic matter, open sewage, or farmsteads. When someone in a rural village was gravely ill or dying in an era before sealed refrigeration, chemical shifts in air and metabolic waste may have attracted insects and rodents, which in turn drew nocturnal raptors.\n\n2. <strong>Canine Perception:</strong> Dogs possess hearing ranges up to 45,000 Hz (compared to 20,000 Hz in humans) and olfactory receptors up to 100,000 times more sensitive. A dog barking at an 'empty' wall is typically detecting subterranean rodents, insects behind plaster, distant high-pitched mechanical vibrations, or ultrasonic acoustic reflections entirely undetectable to humans.\n\n3. <strong>Cognitive Bias:</strong> Psychologically, human belief in omens is sustained by Confirmation Bias and Pareidolia—we vividly recall the rare night an owl cried before a neighbor passed away, while forgetting the hundreds of nights an owl cried without incident."
+      },
+      whyItMatters: {
+        heading: "WHY IT STILL MATTERS TODAY",
+        content: "Animal omen lore reminds us of our deep ecological interconnectedness. While we now understand the acoustic and sensory science behind animal instincts, these traditional beliefs highlight how ancient communities maintained a constant, vigilant dialogue with the natural ecosystem around them."
+      },
+      sources: [
+        "Taylor, I. (2004). Barn Owls: Predator-Prey Relationships and Conservation. Cambridge University Press.",
+        "Miklósi, Á. (2015). Dog Behaviour, Evolution, and Cognition. Oxford University Press.",
+        "Toan Ánh (1968). Phong Tục Việt Nam."
+      ]
+    },
+    {
+      id: "hungry-ghosts",
+      title: "Hungry Ghosts & Wandering Souls",
+      vietnameseName: "Cô Hồn & Xá Tội Vong Nhân",
+      subtitle: "The seventh lunar month, roadside offerings, and collective remembrance.",
+      summary: "During the Seventh Lunar Month, Vietnamese tradition welcomes the pardon of wandering souls ('Cô Hồn')—balancing ancient Buddhist compassion, ancestral respect, and the communal processing of unresolved death.",
+      badge: "Anthropology & Cultural Memory",
+      category: "spiritual",
+      image: "assets/images/explore-hungry-ghosts.svg",
+      articleBottomImage: "https://sohanews.sohacdn.com/160588918557773824/2024/8/4/1gnbjrc1qdexukbfsmvioaq-0042229-16325729-1722765650903-1722765651278785857785.jpeg",
+      belief: {
+        heading: "THE BELIEF",
+        content: "In Vietnamese spiritual tradition, the Seventh Lunar Month marks the opening of the underworld gates, allowing deceased spirits to return to the mortal realm. While cherished ancestors return to their family altars for the Vu Lan festival of filial piety, there exists a tragic class of spirits known as 'Cô Hồn' (wandering souls) or 'Quỷ Đói' (hungry ghosts). These are individuals who died far from home, perished in wars, epidemics, shipwrecks, or childlessness, having no living descendants to sweep their graves or offer incense."
+      },
+      culturalStory: {
+        heading: "THE CULTURAL STORY",
+        content: "To comfort these desperate, starved souls, Vietnamese households set up elaborate outdoor altars on street corners or village crossroads during 'Xá Tội Vong Nhân' (The Pardoning of Lost Souls). Crucially, these offerings are never placed inside the home altar. The offerings include watery rice porridge (cháo hoa / cháo loãng—believed to soothe the burning, needle-thin throats of hungry spirits), boiled sweet potatoes, sugarcane pieces, popcorn, and votive paper clothing.\n\nAfter prayers, children participate in 'cướp cô hồn' (snatching offerings), a joyous communal custom where children scatter and collect the food, symbolically dispersing the offerings and signaling that the spirits have received their feast."
+      },
+      historicalContext: {
+        heading: "HISTORICAL CONTEXT",
+        content: "Vietnam's history has endured centuries of tumultuous warfare, typhoons, catastrophic floods, and devastating epidemics. Millions over centuries passed away far from ancestral homelands without marked graves. The great 18th-century poet Nguyễn Du immortalized this profound cultural pain in his celebrated masterpiece 'Văn Chiêu Hồn' (Calling the Wandering Souls), dedicating verses of boundless empathy to drowned sailors, fallen soldiers, abandoned children, and destitute beggars. The ritual provided a structured, non-judgmental space for society to mourn all unnamed tragedy."
+      },
+      scienceSays: {
+        heading: "WHAT SCIENCE SAYS",
+        content: "From the perspectives of anthropology, social psychology, and grief therapy, the Hungry Ghost tradition functions as a profound mechanism for collective emotional processing:\n\n1. <strong>Grief Externalization & Closure:</strong> Psychologists note that ambiguous loss—where a body is never recovered or an untimely death leaves unfinished emotional business—is one of the most painful psychological traumas. Annual public rituals provide predictable communal catharsis for unresolved collective grief.\n\n2. <strong>Prosocial Empathy & Inclusivity:</strong> The ritual explicitly directs charity toward strangers and the forgotten rather than merely one's immediate biological kin. Studies in prosocial behavior show that communal rituals requiring sharing food and goods foster trust and social safety nets across villages.\n\n3. <strong>Taboo Management:</strong> The concept of spirits lingering due to improper burial reinforces meticulous hygiene and funerary sanitation customs in tropical agricultural environments."
+      },
+      whyItMatters: {
+        heading: "WHY IT STILL MATTERS TODAY",
+        content: "The celebration of Xá Tội Vong Nhân transcends superstition—it is a monument of profound humanistic empathy. In an increasingly fragmented modern world, taking one evening each year to pause, light incense on a darkened street corner, and leave warm food for souls who have nobody left to remember them remains an enduring ethical lesson in universal compassion."
+      },
+      sources: [
+        "Nguyễn Du (c. 1800). Văn Chiêu Hồn (Ten Kinds of Beings).",
+        "Phan Kế Bính (1915). Việt Nam Phong Tục.",
+        "Cadière, L. (1958). Croyances et pratiques religieuses des Viêtnamiens. EFEO."
+      ]
+    },
 ]
 }
