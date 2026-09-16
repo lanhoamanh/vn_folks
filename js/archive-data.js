@@ -148,5 +148,77 @@ const VNFOLKS_DATA = {
         "Cadière, L. (1958). Croyances et pratiques religieuses des Viêtnamiens. EFEO."
       ]
     },
-]
-}
+     {
+      id: "astronomy-mythology",
+      title: "Astronomy in Vietnamese Mythology",
+      vietnameseName: "Thiên Văn Trong Thần Thoại Việt",
+      subtitle: "The Bronze Drum starburst, Weaver and Cowherd, and agricultural sky-clocks.",
+      summary: "Long before optical telescopes, ancient Vietnamese ancestors encoded deep astronomical cycles into myths of solar maidens, lunar banyans, and cosmic monsoon rains.",
+      badge: "Archaeoastronomy & Agriculture",
+      category: "celestial",
+      image: "assets/images/explore-astronomy.svg",
+      articleBottomImage: "https://lh3.googleusercontent.com/sUy3TxVB2t75ejaQ42GAdD1h1koNwkIyHQ7YKKnpOc9zk1dIH84tfWotfRnjiz3ji51m9sCAOOydSs9nFvHONUHZT13HK71L1Q=rw-w1200",
+      belief: {
+        heading: "THE BELIEF",
+        content: "Early Vietnamese mythology conceived the cosmos as a vibrant, interconnected realm ruled by Ông Trời (Heaven) and populated by celestial personifications. The Sun and Moon were personified as the royal daughters of the Jade Emperor—Nữ Thần Mặt Trời and Nữ Thần Mặt Trăng—who rode glittering palanquins across the sky carried by celestial maidens. The varying speed of day and night was explained by whether their escorts were young and diligent or elder and leisurely."
+      },
+      culturalStory: {
+        heading: "THE CULTURAL STORY",
+        content: "Other prominent celestial myths include 'Chú Cuội ngồi gốc cây đa' (The man stranded under the lunar banyan tree after holding onto an uprooted sacred tree) and the poignant Vietnamese adaptation of 'Ngưu Lang - Chức Nữ' (The Cowherd and the Weaver Maiden). In Vietnamese lore, the reunited lovers weep bitter tears during the Seventh Lunar Month when a bridge of magpies (cầu Ô Thước) allows them to cross the Silver River (Milky Way), creating the seasonal drizzle known as 'Mưa Ngâu'."
+      },
+      historicalContext: {
+        heading: "HISTORICAL CONTEXT",
+        content: "The earliest physical evidence of Vietnamese astronomical awareness appears on the tympanums of Đông Sơn bronze drums (dating back over 2,000 years to the Bronze Age). At the exact geometric center of these sacred drums sits a multi-pointed starburst—widely interpreted by archaeologists and ethnographers as a representation of the solar deity, surrounded by concentric rings depicting seasonal aquatic birds, deer, and agricultural dancers moving counter-clockwise. This iconography reflects an advanced agro-lunar calendrical framework indispensable for delta flood management."
+      },
+      scienceSays: {
+        heading: "WHAT SCIENCE SAYS",
+        content: "Modern archaeoastronomy and meteorology demonstrate that ancient sky-myths were remarkably precise intuitive encodings of actual climatic patterns:\n\n1. <strong>Seasonal Monsoon Meteorology:</strong> The 'Mưa Ngâu' (Ngâu drizzle) in Northern and Central Vietnam during August/September correlates precisely with the Intertropical Convergence Zone (ITCZ) shifting southward, producing persistent stratiform rainfall across the Red River basin.\n\n2. <strong>Stellar Navigation:</strong> The apparent positions of stars like Altair (the Cowherd) and Vega (the Weaver Maiden) on opposite sides of the Milky Way reached specific celestial altitudes that ancient farmers utilized as nocturnal clocks to schedule nighttime water distribution into terrace paddies.\n\n3. <strong>Pareidolia on the Moon:</strong> The visual silhouette of 'Chú Cuội' and the banyan tree on the Moon is a psychological consequence of pareidolia, where the human visual cortex interprets lunar maria (dark basaltic plains formed by ancient volcanic eruptions) as familiar figurative shapes."
+      },
+      whyItMatters: {
+        heading: "WHY IT STILL MATTERS TODAY",
+        content: "Vietnamese celestial myths celebrate the dawn of human observation. When ancient storytellers looked into the tropical night sky, they built a poetic bridge connecting celestial mechanics with agricultural survival, proving that science and storytelling share a single origin: humanity's curiosity about the cosmos."
+      },
+      sources: [
+        "Hà Văn Tấn (1994). Văn hóa Đông Sơn ở Việt Nam. Nhà xuất bản Khoa học Xã hội.",
+        "Nguyễn Đổng Chi (1957). Lược khảo về thần thoại Việt Nam.",
+        "Kelley, D. H., & Milone, E. F. (2011). Exploring Ancient Skies: A Survey of Ancient and Cultural Astronomy. Springer."
+      ]
+    },
+    {
+      id: "tet-traditions",
+      title: "Tết Nguyên Đán: Rituals & Renewal",
+      vietnameseName: "Phong Tục & Tín Ngưỡng Ngày Tết",
+      subtitle: "The tall bamboo Cây Nêu, Kitchen Gods, and taboos of the threshold.",
+      summary: "Tết Nguyên Đán represents far more than a calendar turnover—it is a spiritual reset rooted in ancient agrarian survival, domestic hygiene, and protective boundary lore.",
+      badge: "Ethnography & Seasonal Cycles",
+      category: "tradition",
+      image: "assets/images/explore-tet.svg",
+      articleBottomImage: "https://image3.luatvietnam.vn/uploaded/images/original/2026/02/04/thoi-quen-vi-pham-ngay-tet-can-tranh_0402170436.jpg",
+      belief: {
+        heading: "THE BELIEF",
+        content: "Tết Nguyên Đán (The Feast of the First Morning) is the most sacred cultural festival in Vietnamese life. It marks not merely the turning of the calendar year, but an ontological renewal of cosmic balance, domestic harmony, and ancestral kinship. It begins with the departure of Ông Công Ông Táo (The Kitchen Gods) riding golden carps to Heaven on the 23rd of the final lunar month to report on the household's deeds, leaving the domestic realm temporarily unguarded."
+      },
+      culturalStory: {
+        heading: "THE CULTURAL STORY",
+        content: "To protect the household during the vulnerable interregnum before the new year, villagers erected the 'Cây Nêu'—a tall, slender bamboo pole planted in front of the home. Decorated with red fabric streamers, carp drawings, a basket of betel nuts, and terracotta wind chimes (chuông đất) that tinkled in the breeze, the pole served as a sacred beacon indicating that the land belonged to the living and repelling malevolent spirits.\n\nStrict taboos governed the first days of Tết: sweeping the floor was strictly forbidden on the first day of the year (lest one sweep good fortune out the door), debts had to be reconciled before midnight, and the identity of the very first person to cross the home's threshold ('Xông Đất') was believed to determine the household's fortunes for the upcoming twelve months."
+      },
+      historicalContext: {
+        heading: "HISTORICAL CONTEXT",
+        content: "Historically, in a monsoon climate, late winter was a critical transitional period. Stored food supplies were dwindling, damp humidity fostered airborne illnesses, and farmers prepared to begin spring transplantation of rice seedlings. Tết rituals organized communal social obligations, redistributed resources to impoverished villagers, and reinforced community solidarity before the exhausting collective labor of rice cultivation commenced."
+      },
+      scienceSays: {
+        heading: "WHAT SCIENCE SAYS",
+        content: "Viewed through behavioral science, environmental biology, and sociology, traditional Tết customs serve essential practical functions:\n\n1. <strong>Deep Sanitation & Pest Control:</strong> The mandatory 'Tất Niên' cleaning before Tết cleared out stagnant water containers, eradicated insect nests, and cleaned cooking hearths right before spring humidity promoted mold and bacterial propagation.\n\n2. <strong>Psychological Reset & Stress Relief:</strong> The taboo against arguments and the imperative to settle financial debts established a formalized cognitive 'clean slate' (the Fresh Start Effect in behavioral economics), reducing interpersonal tension across villages.\n\n3. <strong>Agrarian Timing:</strong> The bamboo Cây Nêu's terracotta bells acted as wind-measuring devices; elders observed wind direction and seasonal breeze shifts to gauge the onset of the spring rains."
+      },
+      whyItMatters: {
+        heading: "WHY IT STILL MATTERS TODAY",
+        content: "Tết demonstrates how folklore seamlessly blends spirituality with practical wisdom. The customs that modern families still observe—gathering around the peach blossom, releasing carp into clear waterways, and gathering at ancestral tables—reaffirm our need for belonging, gratitude, and clean beginnings in an ever-shifting world."
+      },
+      sources: [
+        "Toan Ánh (1974). Nếp Cũ: Hội Hè Đình Đám. Nhà xuất bản Văn Nghệ.",
+        "Phan Kế Bính (1915). Việt Nam Phong Tục.",
+        "Dai, H., Milkman, K. L., & Riis, J. (2014). The Fresh Start Effect: Temporal Landmarks Motivate Aspirational Behavior. Management Science."
+      ]
+    }
+  ],
+};
