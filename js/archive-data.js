@@ -221,4 +221,100 @@ const VNFOLKS_DATA = {
       ]
     }
   ],
+  stories: [
+    {
+      id: "ong-ba-bi",
+      name: "Ông Ba Bị",
+      vietnameseName: "Ông Ba Bị (Chín Quai, Mười Hai Con Mắt)",
+      epithet: "The Three-Sacked Boogeyman",
+      category: "warnings",
+      region: "Northern & Coastal Central Vietnam",
+      atmosphericSummary: "A towering, shadowy figure carrying three massive woven sacks, summoned by parents to warn disobedient children who wander alone after dusk.",
+      image: "assets/images/story-ong-ba-bi.svg",
+      articleBottomImage: "https://media.techz.vn/media2019/upload2019/2024/09/30/thumb_30092024161820.jpg",
+      legend: {
+        heading: "THE LEGEND",
+        content: "In Vietnamese nurseries and rural courtyards, few phrases caused children to scamper indoors faster than: 'Bớt khóc đi, không thì Ông Ba Bị bắt bây giờ!' (Stop crying, or Ông Ba Bị will come take you!). According to popular nursery rhymes, he was described with cryptic folklore imagery: 'Ba bị, chín quai, mười hai con mắt' (Three sacks, nine handles, twelve eyes). He was said to roam village alleys at dusk, looking for stubborn children who refused to sleep or ran away from their parents, stuffing them into his woven bags and vanishing into the mist."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "Folklore scholars emphasize that this figure's origins are layered with multiple regional traditions and historical interpretations:\n\n1. <strong>The Counting of Woven Crafts:</strong> Cultural linguists point out that 'Ba bị, chín quai, mười hai con mắt' originally described everyday woven reed bags (bị cói). Three bags ('ba bị') each had three handles ('chín quai'), and each bag had four structural weave holes or eyelets ('mười hai con mắt'). Over generations of oral retellings, children's imaginations morphed these technical craft terms into a monster with twelve facial eyes.\n\n2. <strong>Historical Coastal Kidnappers:</strong> In some coastal regions of Northern and Central Vietnam during the 17th and 18th centuries, oral history links the legend to groups of kidnappers or coastal raiders who worked in teams carrying large hemp sacks to snatch unattended children.\n\n3. <strong>The Famine Relief Account:</strong> A separate regional tradition in southern folklore associates the name with high-ranking official Phạm Đăng Hưng (1765–1825), who famously traveled across disaster-stricken provinces carrying three grain sacks to distribute food to starving peasants. As memory faded, the benevolent bag-bearer was paradoxically repurposed in domestic folklore as an all-purpose disciplinarian."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "In rural agrarian Vietnam, where waterways, dense bamboo groves, and unfenced irrigation canals posed constant lethal hazards, parents lacked modern physical safety enclosures. The figure of Ông Ba Bị functioned as an effective verbal barrier, ensuring children remained near the domestic hearth after nightfall."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "The legend reflects universal childhood behavioral conditioning through cautionary boogeyman archetypes, alongside historical rural anxieties regarding child safety, stranger danger, and traumatic memories of historical coastal raiding."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Parallels exist with 'Ông Kẹ' and 'Mẹ Mìn' in other Vietnamese provinces, as well as worldwide figures such as El Hombre del Saco in Hispanic lore or the Sack Man in Mediterranean traditions."
+      }
+    },
+    {
+      id: "hungry-ghosts-story",
+      name: "Ma Đói (Hungry Ghosts)",
+      vietnameseName: "Ma Đói & Cô Hồn Lang Thang",
+      epithet: "The Unconsecrated Starved Wanderers",
+      category: "spirits",
+      region: "Pan-Vietnamese (Prominent in Riverine & Urban Centers)",
+      atmosphericSummary: "Restless souls denied ancestral resting places, drifting through village alleys and modern street corners in search of nourishment and acknowledgment.",
+      image: "assets/images/story-hungry-ghosts.svg",
+      articleBottomImage: "https://daophatmuonmau.com/wp-content/uploads/2021/07/Sam-hoi-can-phai-vao-luc-con-song-moi-duoc.jpg",
+      legend: {
+        heading: "THE LEGEND",
+        content: "Unlike ancestors who reside peacefully within family shrines, the Ma Đói (hungry ghosts) and Cô Hồn (wandering souls) are spectral wanderers condemned to drift between realms. Folk stories describe them as gaunt, shadowy figures with parched, needle-thin throats that cannot swallow solid food, perpetually tormented by thirst and cold. During the Seventh Lunar Month, when the gates of the underworld open, they roam the mortal realm in immense numbers, seeking whatever offerings charitable mortals leave out."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "The concept synthesizes indigenous Vietnamese animism with Buddhist Ullambana traditions (the story of Maudgalyayana saving his mother from the realm of preta or hungry ghosts) and Taoist rituals of the Ghost Festival.\n\nIn the Mekong Delta, tales of wandering spirits often blend with memories of perilous frontier settlement, where settlers succumbed to marsh fevers or river currents. In northern and central regions, folklore vividly connects the spirits with ancient battlefields, shipwrecks, and catastrophic river dyke collapses where bodies could never be identified or returned to ancestral soil."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "In Vietnamese cosmology, an individual's soul requires proper funerary rites and continuous family remembrance to transition peacefully into an ancestor (Tổ Tiên). Without descendants or a marked tomb, a soul is adrift. The annual roadside offerings of thin rice porridge, popped grains, and votive clothes bridge this metaphysical tragedy, providing temporary sustenance to the forgotten."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "This lore reflects deep existential fears of social abandonment, dying far from family, and the heavy psychological weight of collective historical trauma endured through floods, famines, and wars."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Related to the Vietnamese concept of 'chết đường chết chợ' (dying on the street or marketplace—requiring a specialized spirit-calling rite) and the literary tradition of 'Văn Chiêu Hồn'."
+      }
+    },
+    {
+      id: "ma-lon",
+      name: "Ma Lon",
+      vietnameseName: "Trò Chơi Ma Lon",
+      epithet: "The Rolling Tin-Can Divination",
+      category: "rituals",
+      region: "Rural & Suburban Vietnam (Widespread in Central & Southern Regions)",
+      atmosphericSummary: "A mysterious midnight summoning ritual where an empty tin can placed on sand allegedly begins rolling and chasing participants on its own.",
+      image: "assets/images/story-ma-lon.svg",
+      articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx6dpzrxnV2X0P41NitoMw7qDiTEUVGxHbi8YseioMMCrkTr3A86OKR7XD&s=10",
+      legend: {
+        heading: "THE LEGEND",
+        content: "Ma Lon is one of Vietnam's most enduring modern folk rituals and youth urban legends. According to oral lore passed among rural teenagers, if an empty condensed milk tin is inverted on an isolated dirt patch near a graveyard, crossroads, or communal ground at midnight, accompanied by three sticks of burning incense, a cigarette, and spoken invocations, a playful spirit—often said to be the ghost of a child—will possess the can. When summoned, the tin can reportedly stands on edge, begins wobbling, and rolls relentlessly across the ground, pursuing players and striking them on the ankles."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "Unlike ancient court myths, Ma Lon is a mid-to-late 20th-century vernacular folk practice. It likely evolved following the widespread introduction of canned condensed milk (popularized across Vietnam in the mid-1900s). Variations in Central Vietnam incorporate chalk circles and specific rhythmic incantations, while Southern rural accounts emphasize playing in dusty village lanes where the metallic clatter of the rolling can echoed dramatically in the dark."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "Ma Lon functions as a thrilling rite of passage among rural and small-town youths, akin to Western childhood rituals like 'Bloody Mary' or spirit board games. It combines the thrill of mild transgression, the solemn atmosphere of traditional incense offerings, and the adrenaline of a midnight game of tag against an 'unseen' opponent."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "Psychologists and folklorists view Ma Lon as a classic example of group contagion, sensory deprivation in the dark, and ideomotor-adjacent social dynamics. Many accounts of the can moving have been attributed to practical jokes (such as concealed monofilament fishing lines pulled by hidden companions), wind currents catching lightweight hollow tins, or uneven sandy inclines amplified by intense teenage panic and adrenaline."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Closely related to traditional Vietnamese pencil divination (cầu cơ bút) and spirit-calling games using bowls (cầu cơ chén)."
+      }
+    },
+  ]
+  
 };
