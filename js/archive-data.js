@@ -221,7 +221,7 @@ const VNFOLKS_DATA = {
       ]
     }
   ],
-  
+
   stories: [
     {
       id: "ong-ba-bi",
@@ -409,7 +409,98 @@ const VNFOLKS_DATA = {
         content: "Comparable to Southeast Asian protective tutelary spirits, such as Thai Kuman Thong, though Ma Xó occupies a distinct spatial role rooted in the domestic architecture of stilt houses."
       }
     },
+    {
+      id: "ma-da",
+      name: "Ma Da",
+      vietnameseName: "Ma Da (Linh Hồn Vùng Nước)",
+      epithet: "The Restless Water Specter",
+      category: "nature",
+      region: "Red River Delta, Central Coast, & Mekong Delta Waterways",
+      atmosphericSummary: "Restless water spirits lurking beneath murky riverbends and deep canal currents, believed to seek living substitutes to free their souls.",
+      image: "assets/images/story-ma-da.svg",
+      articleBottomImage: "https://image.lag.vn/upload/news/19/07/06/su-that-ve-bai-hat-Bac-Kim-Thang__1__XUIB.jpg",
+      legend: {
+        heading: "THE LEGEND",
+        content: "Ma Da are the feared water spirits of Vietnamese folklore, believed to be the restless souls of people who tragically drowned in rivers, lakes, canals, or deep irrigation ponds. Folk tradition holds that a Ma Da is bound to the cold, murky depths where it died and cannot move on to the afterlife or undergo reincarnation until it finds a living person to drown in its place—a concept known in Vietnamese folklore as 'thế mạng' (substitution). They are described as pale, slippery shadows hiding among submerged roots or river weeds, waiting to seize swimmers by the ankles and drag them into the undertow."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "Because Vietnam is defined by dense river networks, the Mekong Delta, and torrential monsoon floodwaters, stories of Ma Da exist in nearly every river province. In the Southern Delta, Ma Da were often envisioned as small, dark, child-like river creatures with moss-covered skin. In Central Vietnam, fishermen would pour libations of rice wine onto river waters before setting sail to appease these water spirits and protect their nets."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "For generations, Ma Da stories served as an indispensable life-saving warning. In agricultural villages where children played near unfenced, murky canals with steep, muddy banks and unpredictable seasonal currents, parents invoked the threat of Ma Da to keep children from swimming unsupervised or wading into dangerous whirlpools."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "The myth directly reflects the genuine lethal dangers of hydrology in a tropical delta nation:\n\n1. <strong>Hydrological Hazards:</strong> Deep river whirlpools, sudden submerged drop-offs, thick water hyacinth mats that entangle limbs, and cold underwater thermoclines that induce sudden muscle cramping (cramp shock).\n\n2. <strong>Survivor Guilt:</strong> The horrific concept of 'thế mạng' provided a metaphysical explanation for recurring drownings at the exact same bend in a river, where dangerous hydraulic vortexes naturally formed."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Similar water spirit legends exist globally, such as the Japanese Kappa, Celtic Kelpie, or Slavic Rusalka, each serving as an ecological warning against perilous water."
+      }
+    },
+    {
+      id: "linh-mieu",
+      name: "Linh Miêu",
+      vietnameseName: "Linh Miêu (Mèo Ma Ám)",
+      epithet: "The Mystic Corpse-Awakener",
+      category: "nature",
+      region: "Widespread Across Rural & Coastal Vietnam",
+      atmosphericSummary: "A rare, enigmatic black cat born under strange celestial omens, revered and feared for its purported ability to awaken dormant spiritual forces.",
+      image: "assets/images/story-linh-mieu.svg",
+      articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGN7Fp4njhG69xR_K8ijr-N1GS0WbEzqHNpR2un4QrAjNMwlZawU54L5Y&s=10",
+      legend: {
+        heading: "THE LEGEND",
+        content: "In Vietnamese folklore, Linh Miêu is not an ordinary domestic feline, but an extraordinary, mysterious black cat surrounded by deep omens. Accounts describe it as having glossy, midnight-black fur, piercing golden or fiery amber eyes, and sometimes a tiny cluster of golden or white hairs between its eyes resembling a 'third eye.' Folk tradition warns that Linh Miêu possesses heightened sensitivity to the spirit realm, capable of seeing invisible wandering specters, and carries a potent energetic force capable of reanimating the recently dead if it leaps over a coffin."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "Folkloric origins of Linh Miêu are deeply tied to rural observations of feline behavior. In some coastal and delta villages, a cat born at the exact midnight hour of a full moon or born as the sole kitten of a litter was deemed a Linh Miêu. While feared around death and funerals, in other agrarian contexts certain rare cats were treated with high respect as guardians against rodent plagues that threatened grain storage bins."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "Cats have always occupied a nuanced, dualistic position in Vietnamese culture. Unlike the dog, which was celebrated for straightforward loyalty, the cat was perceived as secretive, fiercely independent, and intrinsically connected to the shadows. This perception made the cat the perfect vessel in the folk imagination for bridging the barrier between the living and the dead."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "Feline biology and physics offer fascinating parallels to this folklore:\n\n1. <strong>Static Electricity:</strong> Feline fur carries significant static electrical charge, especially in dry weather or when moving across woven mats. Folklorists note that old explanations often spoke of 'luồng điện' (electric currents) passing between the cat and the corpse.\n\n2. <strong>Nocturnal Feline Ecology:</strong> A cat's reflective tapetum lucidum (causing their eyes to glow vividly in dim light), silent agility, and ability to track ultrasonic rodent communications made their normal hunting behavior appear otherworldly to human onlookers."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Deeply linked to Quỷ Nhập Tràng, and sharing thematic parallels with Japanese Bakeneko and the global historical association of black cats with supernatural lore."
+      }
+    },
+    {
+      id: "quy-mot-gio",
+      name: "Quỷ Một Giò (Thần Độc Cước)",
+      vietnameseName: "Quỷ Một Giò / Thần Độc Cước",
+      epithet: "The One-Legged Coastal Guardian",
+      category: "guardians",
+      region: "Coastal Northern Vietnam (Sầm Sơn, Thanh Hóa Province)",
+      atmosphericSummary: "A legendary heroic guardian spirit who voluntarily split his body in two—leaving one half to defend the sea and the other to protect village lands.",
+      image: "assets/images/story-quy-mot-gio.svg",
+      articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOVRXc1cQ5j9uopXdqi9EVZOZovhiajSk96ESITiRqOU41dtuEO6zPJlo&s=10",
+      legend: {
+        heading: "THE LEGEND",
+        content: "While the term 'Quỷ Một Giò' (One-Legged Demon) was occasionally used in rural folk warnings to describe an eerie hopping nocturnal spirit that startled night travelers in the forest, Vietnam's most famous and revered one-legged entity is Thần Độc Cước (The One-Legged God), enshrined atop the historic Cổ Giải mountain in Sầm Sơn, Thanh Hóa province.\n\nAccording to the heroic legend, during ancient times, coastal villagers were caught between two terrible perils: vicious sea monsters attacking fishing boats offshore, and predatory beasts ravaging their homes from inland mountains. To save his people, a giant hero took a mighty axe and cleaved his own body into two equal vertical halves: one leg and arm remained on the coastline to battle the sea monsters, while the other leg and arm stood on the mountain peak to defend the farming villagers."
+      },
+      origins: {
+        heading: "ORIGINS & REGIONAL VARIATIONS",
+        content: "Folklore records show a fascinating duality: in local seaside hagiography, Độc Cước is venerated as a benevolent, self-sacrificing deity whose temple still stands proudly in Sầm Sơn today, officially recognized in imperial court decrees. Conversely, in upland and forest folklore, 'Quỷ Một Giò' was sometimes used as an informal cautionary term for elusive, hopping forest phantoms that villagers believed stalked remote mountain passes."
+      },
+      culturalContext: {
+        heading: "CULTURAL CONTEXT",
+        content: "Coastal Vietnamese communities faced unrelenting perils from typhoons, pirate raids, and maritime hazards. Veneration of Độc Cước gave fishermen courage before setting out into the deep sea. The temple in Sầm Sơn remains a vibrant pilgrimage site where fishermen hold annual festivals to pray for calm waters and safe voyages."
+      },
+      whatReflects: {
+        heading: "WHAT THE STORY MAY REFLECT",
+        content: "The legend reflects the profound theme of noble self-sacrifice for the survival of the collective community. It also captures early humans' awe when observing singular geological formations—such as giant solitary footprints in coastal granite rocks—which were explained through heroic mythical combat."
+      },
+      relatedBeliefs: {
+        heading: "RELATED BELIEFS",
+        content: "Connected to Vietnamese marine tutelary deities such as Cá Ông (the sacred Whale God) and ancient Dong Son guardian mythologies."
+      }
+    }
   ]
-  
-  
 };
