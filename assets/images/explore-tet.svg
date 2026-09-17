@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tetGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#E8D1A7" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#743014" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1f140e" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="bambooPole" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#84592B"/>
+      <stop offset="50%" stop-color="#E8D1A7"/>
+      <stop offset="100%" stop-color="#442D1C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#1f140e"/>
+  <rect width="800" height="500" fill="url(#tetGlow)"/>
+
+  <!-- Vintage border frame -->
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#9D9167" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.6"/>
+  <rect x="28" y="28" width="744" height="444" fill="none" stroke="#84592B" stroke-width="0.8" opacity="0.8"/>
+
+  <!-- Corner Ornaments -->
+  <g stroke="#E8D1A7" stroke-width="1.2" fill="none" opacity="0.7">
+    <path d="M 28 48 L 48 48 L 48 28"/>
+    <path d="M 772 48 L 752 48 L 752 28"/>
+    <path d="M 28 452 L 48 452 L 48 472"/>
+    <path d="M 772 452 L 752 452 L 752 472"/>
+    <circle cx="48" cy="48" r="3" fill="#E8D1A7"/>
+    <circle cx="752" cy="48" r="3" fill="#E8D1A7"/>
+    <circle cx="48" cy="452" r="3" fill="#E8D1A7"/>
+    <circle cx="752" cy="452" r="3" fill="#E8D1A7"/>
+  </g>
+
+  <!-- Traditional Courtyard & Red Lanterns / Peach Blossom Silhouette (Hoa Đào) -->
+  <g opacity="0.75">
+    <!-- Village Gate & Roof Silhouette -->
+    <path d="M 40 430 L 180 370 L 320 430 L 480 390 L 640 430 L 760 410 L 760 480 L 40 480 Z" fill="#120c08"/>
+    
+    <!-- Red Silk Lanterns Hanging -->
+    <g transform="translate(180, 140)">
+      <ellipse cx="0" cy="0" rx="18" ry="24" fill="#743014" stroke="#E8D1A7" stroke-width="1"/>
+      <line x1="0" y1="-30" x2="0" y2="-24" stroke="#84592B" stroke-width="1.5"/>
+      <line x1="0" y1="24" x2="0" y2="40" stroke="#743014" stroke-width="2"/> <!-- tassel -->
+    </g>
+    <g transform="translate(620, 160)">
+      <ellipse cx="0" cy="0" rx="16" ry="22" fill="#743014" stroke="#E8D1A7" stroke-width="1"/>
+      <line x1="0" y1="-28" x2="0" y2="-22" stroke="#84592B" stroke-width="1.5"/>
+      <line x1="0" y1="22" x2="0" y2="38" stroke="#743014" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- The Sacred Bamboo Pole (Cây Nêu) Dominating the Composition -->
+  <g transform="translate(400, 70)">
+    <!-- Slender Bamboo Trunk with Joint Rings -->
+    <line x1="0" y1="0" x2="0" y2="360" stroke="url(#bambooPole)" stroke-width="7"/>
+    <!-- Bamboo joints -->
+    <line x1="-5" y1="50" x2="5" y2="50" stroke="#442D1C" stroke-width="2"/>
+    <line x1="-5" y1="110" x2="5" y2="110" stroke="#442D1C" stroke-width="2"/>
+    <line x1="-5" y1="170" x2="5" y2="170" stroke="#442D1C" stroke-width="2"/>
+    <line x1="-5" y1="230" x2="5" y2="230" stroke="#442D1C" stroke-width="2"/>
+    <line x1="-5" y1="290" x2="5" y2="290" stroke="#442D1C" stroke-width="2"/>
+
+    <!-- Bamboo Crown Leaves at Top -->
+    <path d="M 0 0 Q -30 -20 -60 -10 Q -25 -5 0 0" fill="#9D9167"/>
+    <path d="M 0 0 Q 30 -25 70 -15 Q 35 -5 0 0" fill="#9D9167"/>
+    <path d="M 0 0 Q -10 -40 -20 -60 Q -5 -30 0 0" fill="#9D9167"/>
+
+    <!-- Round Bamboo Ring (Khánh) with Charms Warding off Demons -->
+    <circle cx="0" cy="40" r="30" fill="none" stroke="#84592B" stroke-width="2.5"/>
+    
+    <!-- Terracotta Wind Chimes (Chuông Gốm) Tinkling in the Breeze -->
+    <g transform="translate(-25, 45)">
+      <polygon points="-5,15 5,15 0,0" fill="#84592B" stroke="#E8D1A7" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(25, 45)">
+      <polygon points="-5,15 5,15 0,0" fill="#84592B" stroke="#E8D1A7" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(0, 70)">
+      <polygon points="-6,18 6,18 0,0" fill="#743014" stroke="#E8D1A7" stroke-width="0.8"/>
+    </g>
+
+    <!-- Flowing Red Silk Streamer (Dải Lụa Đỏ) Fluttering in the Wind -->
+    <path d="M 0 40 Q 45 60 70 45 Q 95 30 130 50 Q 85 70 0 45" fill="#743014" opacity="0.9"/>
+  </g>
+
+  <!-- Golden Carp of Kitchen Gods (Cá Chép Ông Táo) -->
+  <g transform="translate(260, 320) scale(0.9)" opacity="0.85">
+    <!-- Carp Body -->
+    <path d="M 0 0 Q 25 -15 50 0 Q 75 10 90 0 Q 70 20 45 15 Q 20 15 0 0 Z" fill="#84592B" stroke="#E8D1A7" stroke-width="1"/>
+    <!-- Tail Fin -->
+    <path d="M 0 0 Q -15 -15 -30 -10 Q -20 0 -30 10 Q -15 15 0 0" fill="#743014" stroke="#E8D1A7" stroke-width="0.8"/>
+    <!-- Eye -->
+    <circle cx="75" cy="2" r="2.5" fill="#E8D1A7"/>
+    <!-- Whisker -->
+    <path d="M 85 4 Q 95 8 98 16" stroke="#E8D1A7" stroke-width="0.8" fill="none"/>
+  </g>
+
+  <!-- Seal -->
+  <g transform="translate(60, 60)">
+    <circle cx="35" cy="35" r="28" fill="#743014" stroke="#E8D1A7" stroke-width="1.5"/>
+    <text x="35" y="32" font-family="'Cinzel Decorative', 'Georgia', serif" font-size="10" fill="#E8D1A7" text-anchor="middle" font-weight="bold">NGUYÊN</text>
+    <text x="35" y="47" font-family="'Cinzel Decorative', 'Georgia', serif" font-size="10" fill="#E8D1A7" text-anchor="middle" font-weight="bold">ĐÁN</text>
+  </g>
+
+  <!-- Label in Antique Serif -->
+  <text x="400" y="460" font-family="'Cinzel Decorative', 'Georgia', serif" font-size="14" letter-spacing="4" fill="#E8D1A7" text-anchor="middle" opacity="0.85">RENEWAL, TABOOS &amp; THE PROTECTIVE BAMBOO POLE</text>
+</svg>
