@@ -260,7 +260,12 @@ function renderStories(filterCategory) {
 
   const filtered = filterCategory === 'all' 
     ? VNFOLKS_DATA.stories 
-    : VNFOLKS_DATA.stories.filter(s => s.category === filterCategory);
+    : VNFOLKS_DATA.stories.filter(s => {
+        if (filterCategory === 'warnings') {
+          return s.category === 'warnings' || s.category === 'guardians';
+        }
+        return s.category === filterCategory;
+      });
 
   storiesContainer.innerHTML = '';
 
