@@ -12,7 +12,7 @@ const VNFOLKS_DATA = {
       summary: "In Vietnamese folk culture, waking up unable to move while sensing a suffocating presence on one's chest has long been attributed to 'Bóng Đè'—an unseen entity or restless shadow spirit pinning the sleeper down.",
       badge: "Folklore & Neurobiology",
       category: "mind-body",
-      image: "assets/images/explore-sleep-paralysis.svg",
+      image: "assets/images/explore-sleep-paralysis.jpg",
       articleBottomImage: "https://uploads.nguoidothi.net.vn/content/5fe4aa95-542b-40cf-b652-3809dcf33f2d.jpg",
       belief: {
         heading: "THE BELIEF",
@@ -48,7 +48,7 @@ const VNFOLKS_DATA = {
       summary: "Across early Vietnamese oral traditions, eclipses were seen as cosmic emergencies where celestial monsters swallowed the heavenly luminaries—spurring villagers to bang brass mortars and drums to rescue the sky.",
       badge: "Cosmology & Astronomy",
       category: "celestial",
-      image: "assets/images/explore-eclipses.svg",
+      image: "assets/images/explore-eclipses.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB0mqpXQxCqNmiJ0iwVWCR9lT5mw6QpDUeg3FhLnhi2xWK8lHGyrvv8U&s=10",
       belief: {
         heading: "THE BELIEF",
@@ -84,7 +84,7 @@ const VNFOLKS_DATA = {
       summary: "From the ominous call of the barn owl to dogs barking at vacant thresholds, traditional folklore interpreted animal behaviors as prophecies—blending genuine animal sensory biology with human confirmation bias.",
       badge: "Ethology & Psychology",
       category: "nature",
-      image: "assets/images/explore-animal-omens.svg",
+      image: "assets/images/explore-animal-omens.jpg",
       articleBottomImage: "https://media.chuabavang.com/files/content/2025/01/20/chim-lon-0843.jpg",
       belief: {
         heading: "THE BELIEF",
@@ -120,7 +120,7 @@ const VNFOLKS_DATA = {
       summary: "During the Seventh Lunar Month, Vietnamese tradition welcomes the pardon of wandering souls ('Cô Hồn')—balancing ancient Buddhist compassion, ancestral respect, and the communal processing of unresolved death.",
       badge: "Anthropology & Cultural Memory",
       category: "spiritual",
-      image: "assets/images/explore-hungry-ghosts.svg",
+      image: "assets/images/explore-hungry-ghosts.jpg",
       articleBottomImage: "https://sohanews.sohacdn.com/160588918557773824/2024/8/4/1gnbjrc1qdexukbfsmvioaq-0042229-16325729-1722765650903-1722765651278785857785.jpeg",
       belief: {
         heading: "THE BELIEF",
@@ -156,7 +156,7 @@ const VNFOLKS_DATA = {
       summary: "Long before optical telescopes, ancient Vietnamese ancestors encoded deep astronomical cycles into myths of solar maidens, lunar banyans, and cosmic monsoon rains.",
       badge: "Archaeoastronomy & Agriculture",
       category: "celestial",
-      image: "assets/images/explore-astronomy.svg",
+      image: "assets/images/explore-astronomy.jpg",
       articleBottomImage: "https://lh3.googleusercontent.com/sUy3TxVB2t75ejaQ42GAdD1h1koNwkIyHQ7YKKnpOc9zk1dIH84tfWotfRnjiz3ji51m9sCAOOydSs9nFvHONUHZT13HK71L1Q=rw-w1200",
       belief: {
         heading: "THE BELIEF",
@@ -192,7 +192,7 @@ const VNFOLKS_DATA = {
       summary: "Tết Nguyên Đán represents far more than a calendar turnover—it is a spiritual reset rooted in ancient agrarian survival, domestic hygiene, and protective boundary lore.",
       badge: "Ethnography & Seasonal Cycles",
       category: "tradition",
-      image: "assets/images/explore-tet.svg",
+      image: "assets/images/explore-tet.jpg",
       articleBottomImage: "https://image3.luatvietnam.vn/uploaded/images/original/2026/02/04/thoi-quen-vi-pham-ngay-tet-can-tranh_0402170436.jpg",
       belief: {
         heading: "THE BELIEF",
@@ -231,7 +231,7 @@ const VNFOLKS_DATA = {
       category: "warnings",
       region: "Northern & Coastal Central Vietnam",
       atmosphericSummary: "A towering, shadowy figure carrying three massive woven sacks, summoned by parents to warn disobedient children who wander alone after dusk.",
-      image: "assets/images/story-ong-ba-bi.svg",
+      image: "assets/images/story-ong-ba-bi.jpg",
       articleBottomImage: "https://media.techz.vn/media2019/upload2019/2024/09/30/thumb_30092024161820.jpg",
       legend: {
         heading: "THE LEGEND",
@@ -262,7 +262,7 @@ const VNFOLKS_DATA = {
       category: "spirits",
       region: "Pan-Vietnamese (Prominent in Riverine & Urban Centers)",
       atmosphericSummary: "Restless souls denied ancestral resting places, drifting through village alleys and modern street corners in search of nourishment and acknowledgment.",
-      image: "assets/images/story-hungry-ghosts.svg",
+      image: "assets/images/story-hungry-ghosts.jpg",
       articleBottomImage: "https://daophatmuonmau.com/wp-content/uploads/2021/07/Sam-hoi-can-phai-vao-luc-con-song-moi-duoc.jpg",
       legend: {
         heading: "THE LEGEND",
@@ -293,7 +293,7 @@ const VNFOLKS_DATA = {
       category: "rituals",
       region: "Rural & Suburban Vietnam (Widespread in Central & Southern Regions)",
       atmosphericSummary: "A mysterious midnight summoning ritual where an empty tin can placed on sand allegedly begins rolling and chasing participants on its own.",
-      image: "assets/images/story-ma-lon.svg",
+      image: "assets/images/story-ma-lon.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx6dpzrxnV2X0P41NitoMw7qDiTEUVGxHbi8YseioMMCrkTr3A86OKR7XD&s=10",
       legend: {
         heading: "THE LEGEND",
@@ -324,7 +324,7 @@ const VNFOLKS_DATA = {
       category: "spirits",
       region: "Northwestern Highlands (Thái Ethnic Communities & Trấn Hưng Hóa)",
       atmosphericSummary: "Traditional legends from Vietnam's northwestern mountains describing living villagers who walked among ordinary people by day, but were believed to transform into blood-seeking beings under the cover of night.",
-      image: "assets/images/story-restless-dead.svg",
+      image: "assets/images/story-restless-dead.jpg",
       articleBottomImage: "https://i.ytimg.com/vi/A2BOOA-1gY0/maxresdefault.jpg",
       legend: {
         heading: "INTRODUCTION / FOLKLORE BACKGROUND",
@@ -355,7 +355,7 @@ const VNFOLKS_DATA = {
       category: "spirits",
       region: "Traditional Agrarian Villages Across Vietnam",
       atmosphericSummary: "The terrifying folklore phenomenon of a newly deceased body suddenly bolting upright from the funeral mat if an animal leaps across it.",
-      image: "assets/images/story-quy-nhap-trang.svg",
+      image: "assets/images/story-quy-nhap-trang.jpg",
       articleBottomImage: "https://img.vietcetera.com/uploads/images/30-oct-2021/4-quynhaptrang-quy-mot-gio-1635574262242.jpg",
       legend: {
         heading: "THE LEGEND",
@@ -386,7 +386,7 @@ const VNFOLKS_DATA = {
       category: "rituals",
       region: "Northern Highland Ethnic Communities & Highland-Border Traditions",
       atmosphericSummary: "A secret domestic spirit or tutelary skull consecrated in a dark house corner to guard household wealth, carrying severe taboos.",
-      image: "assets/images/story-ma-xo.svg",
+      image: "assets/images/story-ma-xo.jpg",
       articleBottomImage: "https://i.redd.it/this-is-a-creepy-image-about-a-creature-name-ma-x%C3%B3-corner-v0-46zq43457ax81.jpg?width=720&format=pjpg&auto=webp&s=9becca7870ca6ead2f7c785933f6fb6f55c2ae6f",
       legend: {
         heading: "THE LEGEND",
@@ -417,7 +417,7 @@ const VNFOLKS_DATA = {
       category: "nature",
       region: "Red River Delta, Central Coast, & Mekong Delta Waterways",
       atmosphericSummary: "Restless water spirits lurking beneath murky riverbends and deep canal currents, believed to seek living substitutes to free their souls.",
-      image: "assets/images/story-ma-da.svg",
+      image: "assets/images/story-ma-da.jpg",
       articleBottomImage: "https://image.lag.vn/upload/news/19/07/06/su-that-ve-bai-hat-Bac-Kim-Thang__1__XUIB.jpg",
       legend: {
         heading: "THE LEGEND",
@@ -448,7 +448,7 @@ const VNFOLKS_DATA = {
       category: "nature",
       region: "Widespread Across Rural & Coastal Vietnam",
       atmosphericSummary: "A rare, enigmatic black cat born under strange celestial omens, revered and feared for its purported ability to awaken dormant spiritual forces.",
-      image: "assets/images/story-linh-mieu.svg",
+      image: "assets/images/story-linh-mieu.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGN7Fp4njhG69xR_K8ijr-N1GS0WbEzqHNpR2un4QrAjNMwlZawU54L5Y&s=10",
       legend: {
         heading: "THE LEGEND",
@@ -479,7 +479,7 @@ const VNFOLKS_DATA = {
       category: "guardians",
       region: "Coastal Northern Vietnam (Sầm Sơn, Thanh Hóa Province)",
       atmosphericSummary: "A legendary heroic guardian spirit who voluntarily split his body in two—leaving one half to defend the sea and the other to protect village lands.",
-      image: "assets/images/story-quy-mot-gio.svg",
+      image: "assets/images/story-quy-mot-gio.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOVRXc1cQ5j9uopXdqi9EVZOZovhiajSk96ESITiRqOU41dtuEO6zPJlo&s=10",
       legend: {
         heading: "THE LEGEND",
