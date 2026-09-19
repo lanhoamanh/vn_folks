@@ -3,7 +3,6 @@
 VNfolks is an English-language digital archive exploring Vietnamese folklore, traditional beliefs, and supernatural legends through both cultural history and modern scientific perspectives.
 
 ![Screenshot 1](./assets/screenshort1.png)
-![Screenshot 2](./assets/screenshort2.png)
 ---
 
 ## What VNfolks Is & What It's For
