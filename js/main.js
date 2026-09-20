@@ -74,9 +74,9 @@ function formatDossierContent(content) {
       const items = block.split(/\n(?=\d+\.\s+)/);
       const listItemsHtml = items.map(item => {
         const cleaned = item.replace(/^\d+\.\s+/, '').trim();
-        return `<li class="dossier-point-item">${cleaned}</li>`;
+        return `<li class="dossier-numbered-item dossier-point-item">${cleaned}</li>`;
       }).join('');
-      return `<ol class="dossier-point-list">${listItemsHtml}</ol>`;
+      return `<ol class="dossier-numbered-list dossier-point-list">${listItemsHtml}</ol>`;
     }
 
     // Check if the block has bullet points
@@ -348,7 +348,7 @@ function initModalSystem() {
   modals.forEach(modal => {
     // Click close button or backdrop
     modal.addEventListener('click', (e) => {
-      if (e.target.classList.contains('modal-close-btn') || e.target === modal) {
+      if (e.target.closest('.modal-close-btn') || e.target === modal) {
         closeAllModals();
       }
     });
