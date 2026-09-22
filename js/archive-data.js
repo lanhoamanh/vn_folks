@@ -1,6 +1,4 @@
-/**
- * VNFOLKS Digital Archive Database
- */
+// Data for Vietnamese folklore topics and stories
 
 const VNFOLKS_DATA = {
   explore: [
@@ -10,33 +8,33 @@ const VNFOLKS_DATA = {
       vietnameseName: "Hiện Tượng Bóng Đè",
       subtitle: "The nocturnal shadow pressing upon the sleeper's chest.",
       summary: "In Vietnamese folk culture, waking up unable to move while sensing a suffocating presence on one's chest has long been attributed to 'Bóng Đè'—an unseen entity or restless shadow spirit pinning the sleeper down.",
-      badge: "Folklore & Neurobiology",
+      badge: "Folklore & Science",
       category: "mind-body",
       image: "assets/images/explore-sleep-paralysis.jpg",
       articleBottomImage: "https://uploads.nguoidothi.net.vn/content/5fe4aa95-542b-40cf-b652-3809dcf33f2d.jpg",
       belief: {
         heading: "THE BELIEF",
-        content: "In Vietnamese folk tradition, 'Bóng Đè' (literally 'pressed by a shadow') refers to a terrifying nocturnal affliction. A person awakens in the dead of night with complete mental awareness but finds their limbs completely immobilized, their throat unable to produce a cry, and a suffocating, crushing weight bearing down upon their chest. Traditional accounts frequently describe the sensation of an unseen, shadowy figure sitting on the sleeper, suffocating them with cold malice or hovering near the foot of the bed."
+        content: "In Vietnamese folk tradition, 'Bóng Đè' (literally 'pressed by a shadow') refers to a terrifying night experience. A person wakes up in the middle of the night fully conscious, but finds their body completely frozen, unable to speak or move, feeling a heavy weight crushing their chest. Traditional stories often describe an unseen shadowy figure sitting on the sleeper or standing near the bed."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "Folk remedies across rural Vietnam reflected the belief that malevolent spirits, displaced household specters, or lingering ancestral entities caused this phenomenon. To ward off Bóng Đè, elders often placed a kitchen knife, an iron nail, or a head of garlic beneath the pillow, believing iron and pungent aromatics repelled ethereal entities. Others recited Buddhist mantras or hung peach wood branches over doorways. In some village traditions, experiencing recurrent episodes was interpreted as a sign that the household altar had been neglected or that the sleeper was sleeping in an inauspicious geomantic alignment (phong thủy)."
+        content: "Folk remedies across rural Vietnam reflected the belief that wandering spirits or unsettled entities caused this phenomenon. To keep Bóng Đè away, elders often placed a kitchen knife, an iron nail, or a head of garlic under the pillow, believing iron and sharp smells repelled bad spirits. Others recited prayers or hung peach wood branches over doors."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "Accounts of nocturnal suffocation appear in ancient folklore collections across Southeast and East Asia, as well as worldwide (such as the Old Hag in Anglo-Saxon lore or the Mara in Scandinavian folklore). In pre-industrial Vietnamese agrarian communities, communal living and heavy manual labor meant physical exhaustion was widespread. Without access to modern neurobiology, communities naturally attributed sudden bodily paralysis in the dark to unseen nocturnal entities, creating rituals that provided psychological comfort and a shared cultural framework for an otherwise terrifying personal experience."
+        content: "Stories of night suffocation appear in folklore around the world (like the 'Old Hag' in old English stories). In ancient agrarian communities, hard physical labor was part of daily life. Without modern science, people naturally explained sudden body paralysis in the dark through stories of unseen spirits, creating rituals to help feel safe."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "Modern neurology and sleep medicine identify this experience as Sleep Paralysis, specifically an overlap between the REM (Rapid Eye Movement) stage and waking consciousness. During normal REM sleep, the brainstem sends signals to inhibit skeletal muscle activity (known as REM atonia) to prevent individuals from physically acting out their dreams.\n\nWhen a person abruptly regains consciousness before the atonia cycle finishes, the voluntary motor cortex remains temporarily disconnected from the muscular system. The sensation of chest tightness stems from respiration remaining under autonomic control rather than conscious voluntary effort. Concurrently, lingering REM dream mechanisms trigger hypnagogic or hypnopompic hallucinations—causing the hyper-aroused, panicking brain to project shadowy humanoid intruders, auditory hums, or sensations of floating into the immediate environment. Scientific triggers include irregular sleep schedules, sleep deprivation, stress, sleeping in a supine position (on one's back), and sleep apnea."
+        content: "Modern science calls this experience Sleep Paralysis. It happens during a mix-up between dreaming (REM sleep) and waking up. During REM sleep, your brain naturally relaxes your muscles so you don't physically act out your dreams.\n\nIf you wake up before your body switches out of this state, your mind is alert but your muscles can't move yet. Your chest can feel tight because breathing is happening automatically. Because your brain is still partly dreaming, it can project shadowy shapes or sounds into the room. Common triggers include lack of sleep, sleeping on your back, stress, and irregular sleep routines."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "Sleep paralysis illustrates how human neurobiology translates subjective biological vulnerability into cultural myth. Far from being foolish superstitions, beliefs like Bóng Đè provided vulnerable sleepers with actionable rituals to manage panic and seek community support before the advent of polysomnography. Recognizing both the medical mechanism and the cultural narrative allows us to treat sleep disorders with empathy, respecting how ancient ancestors gave voice to the terrifying borderline between wakefulness and dream."
+        content: "Sleep paralysis shows how people turned scary bodily experiences into cultural stories. Far from being silly superstitions, traditions like Bóng Đè gave people practical ways to cope with fear. Understanding both the science and the folklore helps us appreciate how our ancestors tried to make sense of the scary space between sleep and waking up."
       },
       sources: [
-        "American Academy of Sleep Medicine (AASM) - International Classification of Sleep Disorders",
-        "Sharpless, B. A., & Doghramji, K. E. (2015). Sleep Paralysis: Historical, Psychological, and Medical Perspectives. Oxford University Press.",
+        "American Academy of Sleep Medicine (AASM) - Sleep Disorders Guide",
+        "Sharpless, B. A., & Doghramji, K. E. (2015). Sleep Paralysis: Historical and Medical Perspectives.",
         "Nguyễn Đổng Chi (1965). Kho tàng truyện cổ tích Việt Nam."
       ]
     },
@@ -46,69 +44,69 @@ const VNFOLKS_DATA = {
       vietnameseName: "Nhật Thực & Nguyệt Thực",
       subtitle: "The celestial battle when darkness swallowed the sun and moon.",
       summary: "Across early Vietnamese oral traditions, eclipses were seen as cosmic emergencies where celestial monsters swallowed the heavenly luminaries—spurring villagers to bang brass mortars and drums to rescue the sky.",
-      badge: "Cosmology & Astronomy",
+      badge: "Astronomy & Myths",
       category: "celestial",
       image: "assets/images/explore-eclipses.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB0mqpXQxCqNmiJ0iwVWCR9lT5mw6QpDUeg3FhLnhi2xWK8lHGyrvv8U&s=10",
       belief: {
         heading: "THE BELIEF",
-        content: "When the midday sun darkened into unnatural dusk or the full moon turned blood-red in the night sky, traditional Vietnamese folklore explained the terror through vivid mythology: a gigantic celestial beast—frequently imagined in folk tales as a celestial toad (Cóc), a heavenly dog (Chó trời), or an enormous mountain bear—was devouring the heavenly celestial body."
+        content: "When the sun darkened in the middle of the day or the full moon turned blood-red at night, traditional Vietnamese folklore explained it with a scary myth: a huge sky beast—often described as a giant heavenly toad (Cóc) or sky dog (Chó trời)—was eating the sun or moon."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "Folk accounts describe how entire villages would erupt into collective action upon witnessing an eclipse. Villagers rushed out of their wooden cottages armed with brass gongs, bronze mortars, pestles, and cooking pots, furiously beating them into the night sky to create a deafening cacophony (known in idioms as 'gõ cối vang trời'). The loud noise was intended to terrify the celestial creature into releasing its bite and spitting the sun or moon back into the heavens.\n\nIn related ancient myths, such as the famous tale 'Con cóc là cậu ông Trời' (The Toad is the Uncle of Heaven), the modest amphibian held extraordinary spiritual authority, capable of demanding rain from the supreme deity, further intertwining small wetland creatures with massive celestial occurrences."
+        content: "Old stories describe how entire villages worked together during an eclipse. People ran out with metal pots, pestles, and drums, banging them loudly into the night sky. The loud noise was supposed to scare the sky beast into spitting the sun or moon back out.\n\nThis connects with famous tales like 'Con cóc là cậu ông Trời' (The Toad is Heaven's Uncle), where even a small toad had the power to demand rain from Heaven."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "For a civilization fundamentally grounded in wet-rice agriculture, solar and lunar cycles were matter of life and death. The lunar calendar dictated planting, weeding, and harvesting; the sun governed the monsoon warmth. Any sudden disruption in these celestial bodies threatened not just cosmic order, but agricultural survival. Ritualized noise-making during eclipses was shared across multiple Southeast Asian and East Asian agrarian cultures, serving as an active psychological mechanism that transformed helpless panic into organized communal resilience."
+        content: "For a society built on farming rice, the sun and moon were everything. The moon calendar guided planting and harvesting, while the sun warmed the crops. Any sudden change in the sky felt like a threat to survival. Making noise during eclipses was a common tradition across many ancient farming cultures to deal with panic together."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "Modern astronomy explains eclipses through the gravitational mechanics of orbital syzygy—a straight-line configuration of three celestial bodies in a gravitational system.\n\nA Solar Eclipse occurs when the Moon passes directly between the Earth and the Sun, casting its umbral shadow across Earth's surface. A Lunar Eclipse occurs when the Earth passes between the Sun and the Moon, causing Earth's shadow to block sunlight from reaching the lunar surface. The reddish 'blood moon' appearance during a total lunar eclipse is caused by Rayleigh scattering: the Earth's atmosphere scatters shorter blue wavelengths of sunlight while refracting the longer red wavelengths onto the Moon—the exact same optical physics responsible for crimson sunrises and sunsets."
+        content: "Modern astronomy explains eclipses through the movement of the Earth, Moon, and Sun in space:\n\nA Solar Eclipse happens when the Moon passes directly between the Earth and the Sun, casting its shadow on Earth. A Lunar Eclipse happens when the Earth gets between the Sun and the Moon, blocking sunlight from reaching the lunar surface. The reddish 'blood moon' color happens because of Rayleigh scattering—the same reason sunsets look red. Earth's atmosphere filters out blue light and lets red light bend onto the Moon."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "Comparing ancient eclipse rituals with orbital mechanics reveals the universal human need to restore equilibrium when facing celestial awe. The ancient Vietnamese did not passively accept darkness; they banded together with pots and drums to preserve their world. Today, knowing the precise mathematical clockwork behind an eclipse does not diminish its majesty—it deepens our appreciation for both early human wonder and the scientific inquiry that unlocked the cosmos."
+        content: "Looking at ancient eclipse myths alongside modern space science shows how humans always try to restore balance when faced with scary sky events. Knowing how eclipses mathematically work doesn't take away the wonder—it just deepens our appreciation for sky watching."
       },
       sources: [
-        "NASA Eclipse Web Site - Planetary Geodynamics Laboratory",
-        "Toan Ánh (1969). Nếp Cũ: Tín Ngưỡng Việt Nam. Nhà xuất bản Trẻ.",
-        "Nguyễn Từ Chi (1996). Góp phần nghiên cứu văn hóa và tộc người."
+        "NASA Eclipse Web Site",
+        "Toan Ánh (1969). Nếp Cũ: Tín Ngưỡng Việt Nam.",
+        "Nguyễn Từ Chi (1996). Góp phần nghiên cứu văn hóa."
       ]
     },
-     {
+    {
       id: "animal-omens",
       title: "Animal Omens & Instincts",
       vietnameseName: "Điềm Báo Từ Động Vật",
       subtitle: "The barn owl's cry, barking at empty spaces, and serpent omens.",
       summary: "From the ominous call of the barn owl to dogs barking at vacant thresholds, traditional folklore interpreted animal behaviors as prophecies—blending genuine animal sensory biology with human confirmation bias.",
-      badge: "Ethology & Psychology",
+      badge: "Animals & Psychology",
       category: "nature",
       image: "assets/images/explore-animal-omens.jpg",
       articleBottomImage: "https://media.chuabavang.com/files/content/2025/01/20/chim-lon-0843.jpg",
       belief: {
         heading: "THE BELIEF",
-        content: "Rural Vietnamese folklore is rich with interpretations of animal behavior as omens (điềm báo). The mournful, screeching call of the barn owl (chim lợn) flying over a village at night was widely feared as an omen of imminent death or severe tragedy in the nearest household. Similarly, a dog howling mournfully while staring intently at a seemingly empty corner was thought to see invisible wandering spirits, and a snake crossing one's path or entering a house carried omens ranging from ancestral warnings to impending financial loss."
+        content: "Vietnamese folk culture has many stories about animal behavior as omens (điềm báo). The scary call of a barn owl (chim lợn) flying over a village at night was feared as a sign of sickness or bad luck. A dog barking at an empty corner was believed to see invisible spirits, and a snake crossing your path could be an ancestral warning."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "Generations of village elders warned youths to observe the wildlife around the bamboo groves. If a barn owl perched on a roof ridge and called out seven or nine times (symbolizing the traditional folk concept of seven souls for men or nine for women), villagers would burn incense, light lamps, and prepare for sorrowful news. Conversely, the swallow (chim én) nesting under eaves signaled prosperity and domestic peace. These lore frameworks created an intricate web of symbolic signs, where every wild creature carried messages from the unseen world."
+        content: "Village elders taught kids to pay close attention to animals around the village. If an owl perched on a roof and cried out, people burned incense to protect the house. On the other hand, swallows (chim én) nesting under the roof meant good luck and peace for the family."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "In pre-modern Vietnam, villages were directly bordered by dense subtropical forests, marshlands, and river estuaries. Humans lived in acute intimacy with wildlife. Because animals routinely detected natural disasters, changes in humidity, or approaching predators before human eyes could, villagers naturally expanded their practical observations into generalized metaphysical prophecies. When a tragic event followed an unusual animal sighting, oral storytelling preserved the memory while ordinary uneventful sightings were naturally forgotten."
+        content: "In old Vietnam, villages were right next to dense forests and rivers. People lived very close to wildlife. Because animals often spot storms or danger before humans can, villagers turned real animal warnings into spiritual stories passed down through generations."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "Modern animal ethology and sensory biology reveal that many 'supernatural' animal behaviors stem from sensory capabilities far exceeding human biology:\n\n1. <strong>The Barn Owl (Tyto alba):</strong> Barn owls possess exceptional low-frequency auditory acuity and acute olfactory or hunting sensitivity. Research suggests owls are opportunistic scavengers and nocturnal hunters drawn to vermin populations that frequently concentrate around decaying organic matter, open sewage, or farmsteads. When someone in a rural village was gravely ill or dying in an era before sealed refrigeration, chemical shifts in air and metabolic waste may have attracted insects and rodents, which in turn drew nocturnal raptors.\n\n2. <strong>Canine Perception:</strong> Dogs possess hearing ranges up to 45,000 Hz (compared to 20,000 Hz in humans) and olfactory receptors up to 100,000 times more sensitive. A dog barking at an 'empty' wall is typically detecting subterranean rodents, insects behind plaster, distant high-pitched mechanical vibrations, or ultrasonic acoustic reflections entirely undetectable to humans.\n\n3. <strong>Cognitive Bias:</strong> Psychologically, human belief in omens is sustained by Confirmation Bias and Pareidolia—we vividly recall the rare night an owl cried before a neighbor passed away, while forgetting the hundreds of nights an owl cried without incident."
+        content: "Science shows that animals have senses far beyond human ability:\n\n1. <strong>Barn Owls:</strong> Owls have super sensitive hearing and hunting instincts. They hunt rodents and insects that gather around farms or decaying matter. In old villages without modern medicine, subtle environmental changes might draw pests, which in turn attracted owls.\n\n2. <strong>Dog Senses:</strong> Dogs hear high frequencies up to 45,000 Hz (humans only reach 20,000 Hz) and have an incredible sense of smell. A dog barking at an 'empty' wall is often hearing tiny insects behind wood or small animals underground.\n\n3. <strong>Confirmation Bias:</strong> We remember the one spooky night an owl cried before bad news happened, but forget the hundreds of quiet nights it cried with nothing happening."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "Animal omen lore reminds us of our deep ecological interconnectedness. While we now understand the acoustic and sensory science behind animal instincts, these traditional beliefs highlight how ancient communities maintained a constant, vigilant dialogue with the natural ecosystem around them."
+        content: "Animal omen stories show how closely connected our ancestors were to nature. Even though we understand animal senses better today, these stories remind us to pay attention to the environment around us."
       },
       sources: [
-        "Taylor, I. (2004). Barn Owls: Predator-Prey Relationships and Conservation. Cambridge University Press.",
-        "Miklósi, Á. (2015). Dog Behaviour, Evolution, and Cognition. Oxford University Press.",
+        "Taylor, I. (2004). Barn Owls: Ecology and Behavior.",
+        "Miklósi, Á. (2015). Dog Behaviour, Evolution, and Cognition.",
         "Toan Ánh (1968). Phong Tục Việt Nam."
       ]
     },
@@ -118,70 +116,70 @@ const VNFOLKS_DATA = {
       vietnameseName: "Cô Hồn & Xá Tội Vong Nhân",
       subtitle: "The seventh lunar month, roadside offerings, and collective remembrance.",
       summary: "During the Seventh Lunar Month, Vietnamese tradition welcomes the pardon of wandering souls ('Cô Hồn')—balancing ancient Buddhist compassion, ancestral respect, and the communal processing of unresolved death.",
-      badge: "Anthropology & Cultural Memory",
+      badge: "Culture & Memory",
       category: "spiritual",
       image: "assets/images/explore-hungry-ghosts.jpg",
       articleBottomImage: "https://sohanews.sohacdn.com/160588918557773824/2024/8/4/1gnbjrc1qdexukbfsmvioaq-0042229-16325729-1722765650903-1722765651278785857785.jpeg",
       belief: {
         heading: "THE BELIEF",
-        content: "In Vietnamese spiritual tradition, the Seventh Lunar Month marks the opening of the underworld gates, allowing deceased spirits to return to the mortal realm. While cherished ancestors return to their family altars for the Vu Lan festival of filial piety, there exists a tragic class of spirits known as 'Cô Hồn' (wandering souls) or 'Quỷ Đói' (hungry ghosts). These are individuals who died far from home, perished in wars, epidemics, shipwrecks, or childlessness, having no living descendants to sweep their graves or offer incense."
+        content: "In Vietnamese spiritual tradition, the Seventh Lunar Month is when the underworld gates open, allowing wandering spirits to visit the living world. While ancestors return to family altars for Vu Lan, there are also 'Cô Hồn' (wandering souls)—spirits who died far from home with no family left to offer incense for them."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "To comfort these desperate, starved souls, Vietnamese households set up elaborate outdoor altars on street corners or village crossroads during 'Xá Tội Vong Nhân' (The Pardoning of Lost Souls). Crucially, these offerings are never placed inside the home altar. The offerings include watery rice porridge (cháo hoa / cháo loãng—believed to soothe the burning, needle-thin throats of hungry spirits), boiled sweet potatoes, sugarcane pieces, popcorn, and votive paper clothing.\n\nAfter prayers, children participate in 'cướp cô hồn' (snatching offerings), a joyous communal custom where children scatter and collect the food, symbolically dispersing the offerings and signaling that the spirits have received their feast."
+        content: "To comfort these lost spirits, families set up small altars outside on street corners during 'Xá Tội Vong Nhân'. Offerings include light rice porridge (cháo loãng), sweet potatoes, popcorn, and paper clothes.\n\nAfter prayers, local kids join in 'cướp cô hồn'—a fun tradition where kids gather the snacks, symbolically sharing food and bringing energy back to the neighborhood."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "Vietnam's history has endured centuries of tumultuous warfare, typhoons, catastrophic floods, and devastating epidemics. Millions over centuries passed away far from ancestral homelands without marked graves. The great 18th-century poet Nguyễn Du immortalized this profound cultural pain in his celebrated masterpiece 'Văn Chiêu Hồn' (Calling the Wandering Souls), dedicating verses of boundless empathy to drowned sailors, fallen soldiers, abandoned children, and destitute beggars. The ritual provided a structured, non-judgmental space for society to mourn all unnamed tragedy."
+        content: "Vietnam's history faced many floods, storms, and wars where people lost loved ones away from home. Famous poems like Nguyễn Du's 'Văn Chiêu Hồn' expressed deep compassion for forgotten souls, giving communities a shared way to honor everyone who passed away."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "From the perspectives of anthropology, social psychology, and grief therapy, the Hungry Ghost tradition functions as a profound mechanism for collective emotional processing:\n\n1. <strong>Grief Externalization & Closure:</strong> Psychologists note that ambiguous loss—where a body is never recovered or an untimely death leaves unfinished emotional business—is one of the most painful psychological traumas. Annual public rituals provide predictable communal catharsis for unresolved collective grief.\n\n2. <strong>Prosocial Empathy & Inclusivity:</strong> The ritual explicitly directs charity toward strangers and the forgotten rather than merely one's immediate biological kin. Studies in prosocial behavior show that communal rituals requiring sharing food and goods foster trust and social safety nets across villages.\n\n3. <strong>Taboo Management:</strong> The concept of spirits lingering due to improper burial reinforces meticulous hygiene and funerary sanitation customs in tropical agricultural environments."
+        content: "From psychology and sociology perspectives, the Hungry Ghost month helps people process loss and build community:\n\n1. <strong>Healing Grief:</strong> Having a annual ritual helps families feel closure for loved ones lost long ago.\n\n2. <strong>Community Kindness:</strong> The ritual encourages sharing food with strangers and helping people in need, building trust across neighborhoods.\n\n3. <strong>Hygiene Practices:</strong> Cleaning houses and yards before rituals helped keep living spaces tidy during humid monsoon months."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "The celebration of Xá Tội Vong Nhân transcends superstition—it is a monument of profound humanistic empathy. In an increasingly fragmented modern world, taking one evening each year to pause, light incense on a darkened street corner, and leave warm food for souls who have nobody left to remember them remains an enduring ethical lesson in universal compassion."
+        content: "The Seventh Lunar Month is really about kindness and empathy. Taking time to remember those who have nobody left to care for them is a timeless lesson in compassion."
       },
       sources: [
-        "Nguyễn Du (c. 1800). Văn Chiêu Hồn (Ten Kinds of Beings).",
+        "Nguyễn Du (c. 1800). Văn Chiêu Hồn.",
         "Phan Kế Bính (1915). Việt Nam Phong Tục.",
-        "Cadière, L. (1958). Croyances et pratiques religieuses des Viêtnamiens. EFEO."
+        "Cadière, L. (1958). Croyances et pratiques des Viêtnamiens."
       ]
     },
-     {
+    {
       id: "astronomy-mythology",
       title: "Astronomy in Vietnamese Mythology",
       vietnameseName: "Thiên Văn Trong Thần Thoại Việt",
       subtitle: "The Bronze Drum starburst, Weaver and Cowherd, and agricultural sky-clocks.",
       summary: "Long before optical telescopes, ancient Vietnamese ancestors encoded deep astronomical cycles into myths of solar maidens, lunar banyans, and cosmic monsoon rains.",
-      badge: "Archaeoastronomy & Agriculture",
+      badge: "History & Astronomy",
       category: "celestial",
       image: "assets/images/explore-astronomy.jpg",
       articleBottomImage: "https://lh3.googleusercontent.com/sUy3TxVB2t75ejaQ42GAdD1h1koNwkIyHQ7YKKnpOc9zk1dIH84tfWotfRnjiz3ji51m9sCAOOydSs9nFvHONUHZT13HK71L1Q=rw-w1200",
       belief: {
         heading: "THE BELIEF",
-        content: "Early Vietnamese mythology conceived the cosmos as a vibrant, interconnected realm ruled by Ông Trời (Heaven) and populated by celestial personifications. The Sun and Moon were personified as the royal daughters of the Jade Emperor—Nữ Thần Mặt Trời and Nữ Thần Mặt Trăng—who rode glittering palanquins across the sky carried by celestial maidens. The varying speed of day and night was explained by whether their escorts were young and diligent or elder and leisurely."
+        content: "Early Vietnamese myths viewed the sky as a lively world ruled by Ông Trời (Heaven). The Sun and Moon were described as royal sky maidens riding glowing carriages across the heavens. How fast day turned into night depended on whether their escorts were moving quickly or taking a slow walk."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "Other prominent celestial myths include 'Chú Cuội ngồi gốc cây đa' (The man stranded under the lunar banyan tree after holding onto an uprooted sacred tree) and the poignant Vietnamese adaptation of 'Ngưu Lang - Chức Nữ' (The Cowherd and the Weaver Maiden). In Vietnamese lore, the reunited lovers weep bitter tears during the Seventh Lunar Month when a bridge of magpies (cầu Ô Thước) allows them to cross the Silver River (Milky Way), creating the seasonal drizzle known as 'Mưa Ngâu'."
+        content: "Other popular sky stories include 'Chú Cuội ngồi gốc cây đa' (the man sitting under the lunar banyan tree) and 'Ngưu Lang - Chức Nữ' (the Cowherd and Weaver Maiden). In Vietnamese lore, the lovers meet once a year in the 7th lunar month across a bridge of birds, causing the gentle seasonal rain known as 'Mưa Ngâu'."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "The earliest physical evidence of Vietnamese astronomical awareness appears on the tympanums of Đông Sơn bronze drums (dating back over 2,000 years to the Bronze Age). At the exact geometric center of these sacred drums sits a multi-pointed starburst—widely interpreted by archaeologists and ethnographers as a representation of the solar deity, surrounded by concentric rings depicting seasonal aquatic birds, deer, and agricultural dancers moving counter-clockwise. This iconography reflects an advanced agro-lunar calendrical framework indispensable for delta flood management."
+        content: "Ancient Dong Son bronze drums (over 2,000 years old) feature a starburst pattern right in the center, surrounded by birds and dancers. Archaeologists believe this shows early farmers tracked the sun and seasons to know when to plant rice."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "Modern archaeoastronomy and meteorology demonstrate that ancient sky-myths were remarkably precise intuitive encodings of actual climatic patterns:\n\n1. <strong>Seasonal Monsoon Meteorology:</strong> The 'Mưa Ngâu' (Ngâu drizzle) in Northern and Central Vietnam during August/September correlates precisely with the Intertropical Convergence Zone (ITCZ) shifting southward, producing persistent stratiform rainfall across the Red River basin.\n\n2. <strong>Stellar Navigation:</strong> The apparent positions of stars like Altair (the Cowherd) and Vega (the Weaver Maiden) on opposite sides of the Milky Way reached specific celestial altitudes that ancient farmers utilized as nocturnal clocks to schedule nighttime water distribution into terrace paddies.\n\n3. <strong>Pareidolia on the Moon:</strong> The visual silhouette of 'Chú Cuội' and the banyan tree on the Moon is a psychological consequence of pareidolia, where the human visual cortex interprets lunar maria (dark basaltic plains formed by ancient volcanic eruptions) as familiar figurative shapes."
+        content: "Science shows how ancient sky myths matched real weather patterns:\n\n1. <strong>Monsoon Rains:</strong> The 'Mưa Ngâu' rains in August match real seasonal weather shifts across Northern Vietnam.\n\n2. <strong>Star Tracking:</strong> Stars like Altair (the Cowherd) and Vega (the Weaver Maiden) shift positions across the Milky Way, helping early farmers tell time at night.\n\n3. <strong>Shapes on the Moon:</strong> Seeing Chú Cuội on the moon is an example of pareidolia—our brain finding familiar human shapes in dark lunar plains formed by ancient lava."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "Vietnamese celestial myths celebrate the dawn of human observation. When ancient storytellers looked into the tropical night sky, they built a poetic bridge connecting celestial mechanics with agricultural survival, proving that science and storytelling share a single origin: humanity's curiosity about the cosmos."
+        content: "Vietnamese sky myths show how curiosity began. Storytellers looked up at the stars and connected natural cycles with human feelings, showing that storytelling and science share the same spark."
       },
       sources: [
-        "Hà Văn Tấn (1994). Văn hóa Đông Sơn ở Việt Nam. Nhà xuất bản Khoa học Xã hội.",
-        "Nguyễn Đổng Chi (1957). Lược khảo về thần thoại Việt Nam.",
-        "Kelley, D. H., & Milone, E. F. (2011). Exploring Ancient Skies: A Survey of Ancient and Cultural Astronomy. Springer."
+        "Hà Văn Tấn (1994). Văn hóa Đông Sơn ở Việt Nam.",
+        "Nguyễn Đổng Chi (1957). Thần thoại Việt Nam.",
+        "Kelley, D. H., & Milone, E. F. (2011). Exploring Ancient Skies."
       ]
     },
     {
@@ -190,34 +188,34 @@ const VNFOLKS_DATA = {
       vietnameseName: "Phong Tục & Tín Ngưỡng Ngày Tết",
       subtitle: "The tall bamboo Cây Nêu, Kitchen Gods, and taboos of the threshold.",
       summary: "Tết Nguyên Đán represents far more than a calendar turnover—it is a spiritual reset rooted in ancient agrarian survival, domestic hygiene, and protective boundary lore.",
-      badge: "Ethnography & Seasonal Cycles",
+      badge: "Traditions & Seasons",
       category: "tradition",
       image: "assets/images/explore-tet.jpg",
       articleBottomImage: "https://image3.luatvietnam.vn/uploaded/images/original/2026/02/04/thoi-quen-vi-pham-ngay-tet-can-tranh_0402170436.jpg",
       belief: {
         heading: "THE BELIEF",
-        content: "Tết Nguyên Đán (The Feast of the First Morning) is the most sacred cultural festival in Vietnamese life. It marks not merely the turning of the calendar year, but an ontological renewal of cosmic balance, domestic harmony, and ancestral kinship. It begins with the departure of Ông Công Ông Táo (The Kitchen Gods) riding golden carps to Heaven on the 23rd of the final lunar month to report on the household's deeds, leaving the domestic realm temporarily unguarded."
+        content: "Tết Nguyên Đán (Lunar New Year) is the most important holiday in Vietnamese culture. It marks a fresh start for the family and year ahead. It starts when Ông Công Ông Táo (The Kitchen Gods) ride golden carps up to Heaven on the 23rd of the last lunar month to report on the household."
       },
       culturalStory: {
         heading: "THE CULTURAL STORY",
-        content: "To protect the household during the vulnerable interregnum before the new year, villagers erected the 'Cây Nêu'—a tall, slender bamboo pole planted in front of the home. Decorated with red fabric streamers, carp drawings, a basket of betel nuts, and terracotta wind chimes (chuông đất) that tinkled in the breeze, the pole served as a sacred beacon indicating that the land belonged to the living and repelling malevolent spirits.\n\nStrict taboos governed the first days of Tết: sweeping the floor was strictly forbidden on the first day of the year (lest one sweep good fortune out the door), debts had to be reconciled before midnight, and the identity of the very first person to cross the home's threshold ('Xông Đất') was believed to determine the household's fortunes for the upcoming twelve months."
+        content: "To protect the home while the Kitchen Gods are away, families put up a 'Cây Nêu'—a tall bamboo pole decorated with red banners and small wind chimes. Traditional customs include not sweeping the floor on the first day of Tết (so fortune isn't swept away) and paying off debts before the new year starts."
       },
       historicalContext: {
         heading: "HISTORICAL CONTEXT",
-        content: "Historically, in a monsoon climate, late winter was a critical transitional period. Stored food supplies were dwindling, damp humidity fostered airborne illnesses, and farmers prepared to begin spring transplantation of rice seedlings. Tết rituals organized communal social obligations, redistributed resources to impoverished villagers, and reinforced community solidarity before the exhausting collective labor of rice cultivation commenced."
+        content: "In old agricultural times, late winter was a transitional season before spring rice planting. Tết customs brought communities together, shared food, and gave everyone rest before heavy farm work started."
       },
       scienceSays: {
         heading: "WHAT SCIENCE SAYS",
-        content: "Viewed through behavioral science, environmental biology, and sociology, traditional Tết customs serve essential practical functions:\n\n1. <strong>Deep Sanitation & Pest Control:</strong> The mandatory 'Tất Niên' cleaning before Tết cleared out stagnant water containers, eradicated insect nests, and cleaned cooking hearths right before spring humidity promoted mold and bacterial propagation.\n\n2. <strong>Psychological Reset & Stress Relief:</strong> The taboo against arguments and the imperative to settle financial debts established a formalized cognitive 'clean slate' (the Fresh Start Effect in behavioral economics), reducing interpersonal tension across villages.\n\n3. <strong>Agrarian Timing:</strong> The bamboo Cây Nêu's terracotta bells acted as wind-measuring devices; elders observed wind direction and seasonal breeze shifts to gauge the onset of the spring rains."
+        content: "Tết customs served practical health and social purposes:\n\n1. <strong>Spring Cleaning:</strong> Cleaning out the house removed dust and stagnant water right before humid spring weather.\n\n2. <strong>Fresh Start:</strong> Clearing debts and starting fresh lowers stress and helps people start the year feeling positive.\n\n3. <strong>Weather Watching:</strong> Wind chimes on the bamboo pole helped farmers gauge spring breezes for crop planning."
       },
       whyItMatters: {
         heading: "WHY IT STILL MATTERS TODAY",
-        content: "Tết demonstrates how folklore seamlessly blends spirituality with practical wisdom. The customs that modern families still observe—gathering around the peach blossom, releasing carp into clear waterways, and gathering at ancestral tables—reaffirm our need for belonging, gratitude, and clean beginnings in an ever-shifting world."
+        content: "Tết combines family traditions with fresh beginnings. Traditions like gathering together, cooking traditional food, and wishing good health remind us of what matters most."
       },
       sources: [
-        "Toan Ánh (1974). Nếp Cũ: Hội Hè Đình Đám. Nhà xuất bản Văn Nghệ.",
+        "Toan Ánh (1974). Nếp Cũ: Hội Hè Đình Đám.",
         "Phan Kế Bính (1915). Việt Nam Phong Tục.",
-        "Dai, H., Milkman, K. L., & Riis, J. (2014). The Fresh Start Effect: Temporal Landmarks Motivate Aspirational Behavior. Management Science."
+        "Dai, H., Milkman, K. L., & Riis, J. (2014). The Fresh Start Effect."
       ]
     }
   ],
@@ -230,28 +228,28 @@ const VNFOLKS_DATA = {
       epithet: "The Three-Sacked Boogeyman",
       category: "warnings",
       region: "Northern & Coastal Central Vietnam",
-      atmosphericSummary: "A towering, shadowy figure carrying three massive woven sacks, summoned by parents to warn disobedient children who wander alone after dusk.",
+      atmosphericSummary: "A tall shadowy figure carrying three big sacks, mentioned by parents to warn kids not to wander alone after dark.",
       image: "assets/images/story-ong-ba-bi.jpg",
       articleBottomImage: "https://media.techz.vn/media2019/upload2019/2024/09/30/thumb_30092024161820.jpg",
       legend: {
         heading: "THE LEGEND",
-        content: "In Vietnamese nurseries and rural courtyards, few phrases caused children to scamper indoors faster than: 'Bớt khóc đi, không thì Ông Ba Bị bắt bây giờ!' (Stop crying, or Ông Ba Bị will come take you!). According to popular nursery rhymes, he was described with cryptic folklore imagery: 'Ba bị, chín quai, mười hai con mắt' (Three sacks, nine handles, twelve eyes). He was said to roam village alleys at dusk, looking for stubborn children who refused to sleep or ran away from their parents, stuffing them into his woven bags and vanishing into the mist."
+        content: "In Vietnamese families, kids often heard: 'Bớt khóc đi, không thì Ông Ba Bị bắt bây giờ!' (Stop crying or Ông Ba Bị will catch you!). Old nursery rhymes describe him with 'Ba bị, chín quai, mười hai con mắt' (Three sacks, nine handles, twelve eyes). He was said to walk village paths at dusk looking for misbehaving kids."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Folklore scholars emphasize that this figure's origins are layered with multiple regional traditions and historical interpretations:\n\n1. <strong>The Counting of Woven Crafts:</strong> Cultural linguists point out that 'Ba bị, chín quai, mười hai con mắt' originally described everyday woven reed bags (bị cói). Three bags ('ba bị') each had three handles ('chín quai'), and each bag had four structural weave holes or eyelets ('mười hai con mắt'). Over generations of oral retellings, children's imaginations morphed these technical craft terms into a monster with twelve facial eyes.\n\n2. <strong>Historical Coastal Kidnappers:</strong> In some coastal regions of Northern and Central Vietnam during the 17th and 18th centuries, oral history links the legend to groups of kidnappers or coastal raiders who worked in teams carrying large hemp sacks to snatch unattended children.\n\n3. <strong>The Famine Relief Account:</strong> A separate regional tradition in southern folklore associates the name with high-ranking official Phạm Đăng Hưng (1765–1825), who famously traveled across disaster-stricken provinces carrying three grain sacks to distribute food to starving peasants. As memory faded, the benevolent bag-bearer was paradoxically repurposed in domestic folklore as an all-purpose disciplinarian."
+        heading: "ORIGINS & VARIATIONS",
+        content: "Folklorists say this figure came from a mix of local history and rhymes:\n\n1. <strong>Woven Bags:</strong> The phrase 'Ba bị, chín quai, mười hai con mắt' originally described woven storage bags. Three bags ('ba bị') had three handles each ('chín quai'), and four weave holes ('mười hai con mắt'). Over time, kids imagined it as a monster with twelve eyes!\n\n2. <strong>Coastal Safety:</strong> In coastal towns, old warnings reminded kids not to wander off near strange boats or dark roads after dusk."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "In rural agrarian Vietnam, where waterways, dense bamboo groves, and unfenced irrigation canals posed constant lethal hazards, parents lacked modern physical safety enclosures. The figure of Ông Ba Bị functioned as an effective verbal barrier, ensuring children remained near the domestic hearth after nightfall."
+        content: "In rural villages with rivers and dark woods, parents didn't have fences. Stories of Ông Ba Bị worked as a quick safety warning to keep kids close to home at night."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "The legend reflects universal childhood behavioral conditioning through cautionary boogeyman archetypes, alongside historical rural anxieties regarding child safety, stranger danger, and traumatic memories of historical coastal raiding."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "The story reflects classic bedtime safety warnings used around the world to keep children safe from real-world dangers after dark."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Parallels exist with 'Ông Kẹ' and 'Mẹ Mìn' in other Vietnamese provinces, as well as worldwide figures such as El Hombre del Saco in Hispanic lore or the Sack Man in Mediterranean traditions."
+        content: "Similar to 'Ông Kẹ' in Vietnam, or 'El Hombre del Saco' (The Sack Man) in Spanish stories."
       }
     },
     {
@@ -260,215 +258,215 @@ const VNFOLKS_DATA = {
       vietnameseName: "Ma Đói & Cô Hồn Lang Thang",
       epithet: "The Unconsecrated Starved Wanderers",
       category: "spirits",
-      region: "Pan-Vietnamese (Prominent in Riverine & Urban Centers)",
-      atmosphericSummary: "Restless souls denied ancestral resting places, drifting through village alleys and modern street corners in search of nourishment and acknowledgment.",
+      region: "Pan-Vietnamese",
+      atmosphericSummary: "Restless spirits seeking food and remembrance during the seventh lunar month.",
       image: "assets/images/story-hungry-ghosts.jpg",
       articleBottomImage: "https://daophatmuonmau.com/wp-content/uploads/2021/07/Sam-hoi-can-phai-vao-luc-con-song-moi-duoc.jpg",
       legend: {
         heading: "THE LEGEND",
-        content: "Unlike ancestors who reside peacefully within family shrines, the Ma Đói (hungry ghosts) and Cô Hồn (wandering souls) are spectral wanderers condemned to drift between realms. Folk stories describe them as gaunt, shadowy figures with parched, needle-thin throats that cannot swallow solid food, perpetually tormented by thirst and cold. During the Seventh Lunar Month, when the gates of the underworld open, they roam the mortal realm in immense numbers, seeking whatever offerings charitable mortals leave out."
+        content: "Unlike family ancestors, Ma Đói (hungry ghosts) are believed to be spirits who passed away with no family left to remember them. Stories describe them drifting through village lanes looking for kindness and snacks during the Ghost Month."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "The concept synthesizes indigenous Vietnamese animism with Buddhist Ullambana traditions (the story of Maudgalyayana saving his mother from the realm of preta or hungry ghosts) and Taoist rituals of the Ghost Festival.\n\nIn the Mekong Delta, tales of wandering spirits often blend with memories of perilous frontier settlement, where settlers succumbed to marsh fevers or river currents. In northern and central regions, folklore vividly connects the spirits with ancient battlefields, shipwrecks, and catastrophic river dyke collapses where bodies could never be identified or returned to ancestral soil."
+        heading: "ORIGINS & VARIATIONS",
+        content: "The tradition combines local beliefs with Buddhist and Taoist ghost month traditions. Across river delta regions, people left simple street offerings so all wandering spirits could feel welcomed."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "In Vietnamese cosmology, an individual's soul requires proper funerary rites and continuous family remembrance to transition peacefully into an ancestor (Tổ Tiên). Without descendants or a marked tomb, a soul is adrift. The annual roadside offerings of thin rice porridge, popped grains, and votive clothes bridge this metaphysical tragedy, providing temporary sustenance to the forgotten."
+        content: "In traditional culture, honoring ancestors is very important. Annual roadside offerings of rice porridge and fruit offer temporary comfort to forgotten souls."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "This lore reflects deep existential fears of social abandonment, dying far from family, and the heavy psychological weight of collective historical trauma endured through floods, famines, and wars."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "This story highlights empathy and community care—making sure nobody is left out or forgotten."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Related to the Vietnamese concept of 'chết đường chết chợ' (dying on the street or marketplace—requiring a specialized spirit-calling rite) and the literary tradition of 'Văn Chiêu Hồn'."
+        content: "Related to roadside offering customs and traditional poems of remembrance."
       }
     },
     {
       id: "ma-lon",
       name: "Ma Lon",
       vietnameseName: "Trò Chơi Ma Lon",
-      epithet: "The Rolling Tin-Can Divination",
+      epithet: "The Rolling Tin-Can Game",
       category: "rituals",
-      region: "Rural & Suburban Vietnam (Widespread in Central & Southern Regions)",
-      atmosphericSummary: "A mysterious midnight summoning ritual where an empty tin can placed on sand allegedly begins rolling and chasing participants on its own.",
+      region: "Rural & Suburban Vietnam",
+      atmosphericSummary: "A midnight game where an empty tin can allegedly begins rolling and chasing players across the ground.",
       image: "assets/images/story-ma-lon.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx6dpzrxnV2X0P41NitoMw7qDiTEUVGxHbi8YseioMMCrkTr3A86OKR7XD&s=10",
       legend: {
         heading: "THE LEGEND",
-        content: "Ma Lon is one of Vietnam's most enduring modern folk rituals and youth urban legends. According to oral lore passed among rural teenagers, if an empty condensed milk tin is inverted on an isolated dirt patch near a graveyard, crossroads, or communal ground at midnight, accompanied by three sticks of burning incense, a cigarette, and spoken invocations, a playful spirit—often said to be the ghost of a child—will possess the can. When summoned, the tin can reportedly stands on edge, begins wobbling, and rolls relentlessly across the ground, pursuing players and striking them on the ankles."
+        content: "Ma Lon is a famous Vietnamese youth urban legend. According to local lore, if teens put an empty milk tin can upside down on sand at midnight with incense, the tin can would start wobbling and rolling after players like a game of tag!"
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Unlike ancient court myths, Ma Lon is a mid-to-late 20th-century vernacular folk practice. It likely evolved following the widespread introduction of canned condensed milk (popularized across Vietnam in the mid-1900s). Variations in Central Vietnam incorporate chalk circles and specific rhythmic incantations, while Southern rural accounts emphasize playing in dusty village lanes where the metallic clatter of the rolling can echoed dramatically in the dark."
+        heading: "ORIGINS & VARIATIONS",
+        content: "This game became popular in the mid-1900s after canned condensed milk became common. In rural villages, playing games outdoors at night created lots of spooky fun and laughter among friends."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "Ma Lon functions as a thrilling rite of passage among rural and small-town youths, akin to Western childhood rituals like 'Bloody Mary' or spirit board games. It combines the thrill of mild transgression, the solemn atmosphere of traditional incense offerings, and the adrenaline of a midnight game of tag against an 'unseen' opponent."
+        content: "Ma Lon functions like classic sleepover dare games (such as Bloody Mary in Western countries). It combines adrenaline, darkness, and playing tag with friends."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "Psychologists and folklorists view Ma Lon as a classic example of group contagion, sensory deprivation in the dark, and ideomotor-adjacent social dynamics. Many accounts of the can moving have been attributed to practical jokes (such as concealed monofilament fishing lines pulled by hidden companions), wind currents catching lightweight hollow tins, or uneven sandy inclines amplified by intense teenage panic and adrenaline."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "The rolling can is usually explained by practical jokes, light wind catching lightweight hollow cans, or uneven ground made exciting by dark night adrenaline!"
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Closely related to traditional Vietnamese pencil divination (cầu cơ bút) and spirit-calling games using bowls (cầu cơ chén)."
+        content: "Similar to traditional pencil or bowl games played by kids around the world."
       }
     },
     {
       id: "the-restless-dead",
       name: "Vietnamese Vampire (Ma Cà Rồng & Phi Phông)",
       vietnameseName: "Ma Cà Rồng & Truyền Thuyết Phi Phông",
-      epithet: "The Nocturnal Wanderer of Northwestern Highland Lore",
+      epithet: "Highland Legend of the Nocturnal Wanderer",
       category: "spirits",
-      region: "Northwestern Highlands (Thái Ethnic Communities & Trấn Hưng Hóa)",
-      atmosphericSummary: "Traditional legends from Vietnam's northwestern mountains describing living villagers who walked among ordinary people by day, but were believed to transform into blood-seeking beings under the cover of night.",
+      region: "Northwestern Highlands",
+      atmosphericSummary: "Highland legends about villagers who lived normally by day, but were believed to wander into the woods at night.",
       image: "assets/images/story-restless-dead.jpg",
       articleBottomImage: "https://i.ytimg.com/vi/A2BOOA-1gY0/maxresdefault.jpg",
       legend: {
-        heading: "INTRODUCTION / FOLKLORE BACKGROUND",
-        content: "In contemporary Vietnamese, the colloquial term 'ma cà rồng' is universally employed to translate Western gothic vampires and cinematic Dracula archetypes. Yet long before European literary figures reached Southeast Asia, older Vietnamese chronicles recorded an indigenous, geographically specific belief under this exact name.\n\nThe earliest prominent written account appears in the 18th-century compendium <em>Kiến văn tiểu lục</em> (1777), penned by the distinguished scholar and polymath Lê Quý Đôn. In his historical observations of Trấn Hưng Hóa—an administrative frontier region encompassing much of modern-day northwestern Vietnam, including Sơn La, Điện Biên, Lai Châu, Lào Cai, and Hòa Bình—Lê Quý Đôn documented local reports of strange nocturnal beings known as <em>ma cà rồng</em> (also recorded phonetically in regional dialects as <em>ma cà rằng</em> or <em>ma càn sùng</em>). Rather than an undead aristocrat residing in a gothic crypt, this entity was intimately intertwined with the living agrarian communities of the northern highland valleys."
+        heading: "INTRODUCTION & FOLKLORE",
+        content: "In Vietnam, 'Ma Cà Rồng' is often used to translate vampire stories. But long ago, scholar Lê Quý Đôn wrote in 1777 about local legends in northwestern mountain villages describing strange night wanderers called Phi Phông."
       },
       origins: {
-        heading: "THE NORTHWESTERN LEGEND",
-        content: "In the oral traditions of Vietnam's northwestern highlands, particularly among the Thái ethnic communities (Black Thai and White Thai), this supernatural figure is traditionally known as <strong>Phi Phông</strong> (or <em>Phí Phông</em>, with 'Phi' being the Thai term for spirits, ghosts, or metaphysical entities).\n\nAccording to documented ethnographic accounts and living oral folklore, the most striking aspect of the Phi Phông was their dual existence:\n\n1. <strong>Ordinary Daylight Life:</strong> During the day, individuals believed to possess this condition lived entirely normal, visible lives within the village (bản). They farmed terraced paddies, wove textiles, shared communal meals, and raised families. They were living, breathing neighbors, completely indistinguishable from anyone else in the community.\n\n2. <strong>Nighttime Transformation:</strong> In traditional storytelling, as midnight deepened, a mysterious nocturnal urge overtook them. Folk accounts claimed their eyes took on a reddish cast and their spiritual essence detached or transformed. They were believed to roam through the dark valleys and riverbanks, searching for raw nourishment, small animals, frogs, fish, or entering homes where a woman was undergoing childbirth or nursing a newborn to consume blood and vital fluids.\n\n3. <strong>Folkloric Motifs & The Dawn Return:</strong> Older lore recorded by Lê Quý Đôn contained curious regional motifs—such as the belief that they could invert their toes into their nostrils to float silently over bamboo groves, or manifest as flickering, greenish will-o'-the-wisp lights above mountain streams. Crucially, before the break of dawn (the fifth watch, or <em>canh năm</em>), the wanderer was said to return to their stilt house, wash their feet in a wooden trough of <em>tô mộc</em> (a traditional red dye made from sappanwood), and awake as an ordinary human, often having no conscious recollection of their nocturnal journey."
+        heading: "THE HIGHLAND LEGEND",
+        content: "In mountain lore, Phi Phông lived normal lives during the day—farming and weaving alongside neighbors. But at night, stories claimed they wandered near misty rivers looking for fish or frogs before returning home by sunrise."
       },
       culturalContext: {
-        heading: "HOW VIETNAMESE VAMPIRE FOLKLORE DIFFERS FROM WESTERN VAMPIRES",
-        content: "Contrasting the Northwestern Vietnamese Phi Phông with stereotypical Western Dracula-style vampires highlights a fundamentally different cultural cosmology:\n\n1. <strong>A Living Villager Rather Than an Undead Corpse:</strong> Western gothic vampires are reanimated cadavers who have risen from cemeteries, crave eternal life, and are destroyed by sunlight. In contrast, the Phi Phông was never considered a corpse; they were living human beings who aged, fell ill, and lived in regular domestic stilt houses under the daytime sun without any physical harm.\n\n2. <strong>Spiritual Affliction Versus Predatory Curse:</strong> In European fiction, vampirism is contracted via a predatory neck bite from an immortal monster. In Thai and northwestern lore, becoming a Phi Phông was traditionally conceptualized as an unfortunate spiritual affliction—believed to be transmitted matrilineally from mother to daughter, acquired accidentally through tainted folk charms or sorcery (<em>bùa ngải</em>), or resulting from an involuntary spiritual possession.\n\n3. <strong>Community Accommodation Versus Eradication:</strong> In European history, vampire panics frequently provoked horrific exhumations, staking corpses through the heart, and decapitations. In traditional northwestern highland communities, the social response was markedly more empathetic and protective. Because the afflicted person was a recognized kin member, spouse, or neighbor, the community rarely sought violence. Instead, they viewed the individual as someone suffering from an invisible sickness. Village elders and shamans (<em>thầy mo</em>) were engaged to perform protective rituals, and families hung thorny branches (lá gai) or woven fishing nets across entryways to deter nighttime spirits peacefully."
+        heading: "CULTURAL DIFFERENCES",
+        content: "Unlike Western movie vampires who are undead monsters, Phi Phông were living neighbors. Communities saw it as a strange sickness or bad charm rather than something evil, using peaceful protective leaves to keep spirits away."
       },
       whatReflects: {
-        heading: "CULTURAL CONTEXT AND COMMUNITY BELIEFS",
-        content: "Understanding the Phi Phông requires placing the legend within the social and environmental geography of the northwestern highlands:\n\n1. <strong>Explaining Maternal & Infant Mortality:</strong> In isolated pre-modern mountain villages, childbirth in stilt houses posed immense clinical dangers. Postpartum hemorrhage, puerperal fever, and sudden infant death were frequent, heartbreaking realities before the arrival of modern medicine. Believing that a malevolent nocturnal spirit targeted postpartum mothers and newborns provided an explanatory framework for grief, transforming incomprehensible biological tragedies into culturally manageable spiritual narratives.\n\n2. <strong>The Boundary Between Settlement and Jungle:</strong> Traditional highland settlements were tightly bounded sanctuaries of safety (bản), surrounded by dense, malaria-prone primeval rainforests (rừng thiêng nước độc). The Phi Phông legend reinforced domestic vigilance, curfew customs, and social responsibility, reminding villagers of the psychological perils lurking at the boundary between civilized domestic space and untamed nature.\n\n3. <strong>Distinguishing Folklore from Modern Media:</strong> Contemporary horror cinema and commercial retellings often exaggerate Phi Phông into sensationalized monsters with exaggerated fangs and violent rampages. Anthropologists emphasize that authentic folklore treats the belief with solemn respect, reflecting ancient communal anxieties, traditional kinship solidarity, and humanity's effort to make sense of the dark."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "1. <strong>Sleepwalking:</strong> Severe sleepwalking led people to wander outdoors in their sleep without remembering it the next day.\n\n2. <strong>Swamp Lights:</strong> Eerie glowing lights over bogs were natural marsh gas emissions (will-o'-the-wisp)."
       },
       relatedBeliefs: {
-        heading: "WHAT SCIENCE AND ANTHROPOLOGY CAN SAY",
-        content: "Modern medicine, neurology, and anthropology provide grounded, rational insights into the phenomena that sustained the Phi Phông legend across centuries:\n\n1. <strong>Somnambulism and Sleep Disorders:</strong> Neurologists recognize that complex parasomnias, such as severe sleepwalking (somnambulism) and nocturnal wandering, can cause individuals to walk, open doors, and roam outdoors while in a dissociated state between sleep and wakefulness. Upon waking, sleepwalkers typically retain zero conscious memory of their nighttime actions. In a pre-industrial village, seeing an esteemed neighbor wandering blank-faced through the misty fields at midnight was readily perceived as a supernatural transformation.\n\n2. <strong>Bioluminescent Gases & Environmental Illusions:</strong> The folk reports of eerie greenish orbs hovering over mountain streams correlate directly with chemiluminescent marsh gases (such as phosphine and methane emissions, historically known as <em>ignis fatuus</em> or will-o'-the-wisp) produced by decaying organic matter in mountain bogs, alongside swarms of luminous insects.\n\n3. <strong>Anthropological 'Imaginary Heritage':</strong> Renowned ethnographers and cultural scholars note that legends like Phi Phông function as 'imaginary heritage'—symbolic cultural repositories through which close-knit agrarian communities negotiated unspoken social tensions, medical vulnerabilities, and collective fears without fracturing communal harmony."
+        heading: "RELATED BELIEFS",
+        content: "Connects with mountain village lore and local bedtime stories."
       }
     },
     {
       id: "quy-nhap-trang",
       name: "Quỷ Nhập Tràng",
       vietnameseName: "Hiện Tượng Quỷ Nhập Tràng",
-      epithet: "The Corpse Reanimation",
+      epithet: "The Corpse Reanimation Legend",
       category: "spirits",
-      region: "Traditional Agrarian Villages Across Vietnam",
-      atmosphericSummary: "The terrifying folklore phenomenon of a newly deceased body suddenly bolting upright from the funeral mat if an animal leaps across it.",
+      region: "Traditional Agrarian Villages",
+      atmosphericSummary: "Folk tales about keep pets away from funeral mats so dark energies wouldn't startle the room.",
       image: "assets/images/story-quy-nhap-trang.jpg",
       articleBottomImage: "https://img.vietcetera.com/uploads/images/30-oct-2021/4-quynhaptrang-quy-mot-gio-1635574262242.jpg",
       legend: {
         heading: "THE LEGEND",
-        content: "Quỷ Nhập Tràng (literally 'a demon entering the funeral bed') is one of the most widely cited traditional horror beliefs in Vietnamese villages. According to rural lore, while a recently deceased person is lying in state prior to being sealed inside the wooden coffin, all domestic animals—especially cats and dogs—must be strictly kept away. It was believed that if an animal, particularly a black cat or pregnant animal, leaped over the corpse, an evil spirit or erratic surge of energy would instantly enter the body, causing the cadaver to snap upright, open its glassy eyes, or walk forward."
+        content: "Quỷ Nhập Tràng is an old village story warning families to keep pets away from the room during a wake, fearing that an animal jumping past might startle people or disturb the atmosphere."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Accounts of Quỷ Nhập Tràng are documented in folkloric records across the Red River Delta down through Central coastal villages. While some regional variations claim the reanimated corpse would chase and embrace the nearest living person to steal their breath, other accounts describe it simply rising once and collapsing back down as an ominous portent. In southern delta regions, elders would place a sickle or iron blade across the deceased's chest, believing the metal grounded and severed any dangerous spiritual currents."
+        heading: "ORIGINS & VARIATIONS",
+        content: "Across village traditions, families stayed awake together throughout the night, lighting oil lamps and keeping quiet watch."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "This belief directly shaped traditional Vietnamese wake rituals. Family members maintained an unbroken vigil throughout the night, burning smokeless oil lamps and incense, and actively patrolling the perimeter to ensure stray animals could not approach the deceased. The custom emphasized filial vigilance and the family's sacred duty to guard the deceased until safe entombment."
+        content: "This belief encouraged families to stay close and support one another throughout night wakes, showing respect for the deceased."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "Modern medicine and forensic pathology explain how genuine biological occurrences fueled this belief:\n\n1. <strong>Clinical Death Misdiagnosis:</strong> In past centuries, individuals in severe hypothermic states, catatonic stupors, or diabetic comas were sometimes mistaken for dead. A sudden physical stimulus, such as a cold animal landing on them, could trigger a reflex gasp or sudden limb movement.\n\n2. <strong>Post-Mortem Muscle Spasms:</strong> Following somatic death, lingering ATP (adenosine triphosphate) in muscle tissues, chemical changes during early rigor mortis, or gas expansion in abdominal cavities can cause involuntary muscle twitches, fingers curling, or slight torso shifts. In a dimly lit, emotionally devastated room, any slight movement accompanied by a startled cat jumping was instantly perceived as supernatural reanimation."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "Natural body reflexes or small muscle twitches after death combined with shadow lighting often startled nervous observers in dimly lit rooms."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Closely intertwined with legends of 'Linh Miêu' (the mystical black cat) and the funeral custom of 'thức tang' (staying awake during the entire wake)."
+        content: "Linked with traditional wake vigils ('thức tang')."
       }
     },
     {
       id: "ma-xo",
       name: "Ma Xó",
       vietnameseName: "Ma Xó (Ma Góc Nhà)",
-      epithet: "The Corner-Dwelling Spirit",
+      epithet: "The Corner Guardian Spirit",
       category: "rituals",
-      region: "Northern Highland Ethnic Communities & Highland-Border Traditions",
-      atmosphericSummary: "A secret domestic spirit or tutelary skull consecrated in a dark house corner to guard household wealth, carrying severe taboos.",
+      region: "Upland & Border Regions",
+      atmosphericSummary: "A traditional story about hidden guardian spirits kept in house corners to protect home wealth.",
       image: "assets/images/story-ma-xo.jpg",
       articleBottomImage: "https://i.redd.it/this-is-a-creepy-image-about-a-creature-name-ma-x%C3%B3-corner-v0-46zq43457ax81.jpg?width=720&format=pjpg&auto=webp&s=9becca7870ca6ead2f7c785933f6fb6f55c2ae6f",
       legend: {
         heading: "THE LEGEND",
-        content: "Ma Xó refers to a mysterious entity or guardian spirit traditionally kept hidden in the darkest, most secluded corner ('xó') of a traditional stilt house or rural dwelling. According to folkloric accounts, the master of the house would enshrine a spirit—sometimes represented by a skull, an inscribed stone, or a bamboo talisman—to guard the family's property against thieves and intruding curses. In popular storytelling, the spirit was said to whisper warnings to the owner in dreams and inflict sudden illness on intruders."
+        content: "Ma Xó refers to a story about guardian spirits kept in quiet house corners ('xó') to guard family belongings against thieves."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "The concept originated in indigenous animist traditions among certain upland ethnic groups in the Northwest and Central Highlands, where domestic ancestral spirits were venerated in private domestic corners. Over time, as stories filtered into lowland Kinh majority communities, the practice was sensationalized into a dark, occult taboo. Popular urban folklore often portrayed the keeping of a Ma Xó as a perilous contract: if the family ever missed an offering or neglected the spirit, the entity would turn violently against its hosts."
+        heading: "ORIGINS & VARIATIONS",
+        content: "In remote mountain houses without door locks or police, believing that a house had a guardian spirit warned off intruders."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "In remote highland settlements where houses stood far apart without locks, police, or formal legal infrastructure, the psychological presence of a watchful domestic spirit provided a powerful deterrent against theft and community transgression. Everyone in the village knew that violating a neighbor's threshold meant inviting the wrath of their unseen guardian."
+        content: "It acted as an early psychological lock—everyone in the village knew not to steal from neighbors."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "The legend reflects early communal mechanisms for property protection, alongside timeless moral warnings regarding the perils of spiritual greed. The cautionary tales remind listeners that seeking shortcuts to wealth through secretive pacts inevitably brings domestic ruin."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "Reflects ancient ways communities protected home safety and warned against dishonesty."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Comparable to Southeast Asian protective tutelary spirits, such as Thai Kuman Thong, though Ma Xó occupies a distinct spatial role rooted in the domestic architecture of stilt houses."
+        content: "Similar to guardian spirit lore found in traditional houses across Southeast Asia."
       }
     },
     {
       id: "ma-da",
       name: "Ma Da",
       vietnameseName: "Ma Da (Linh Hồn Vùng Nước)",
-      epithet: "The Restless Water Specter",
+      epithet: "The Restless Water Spirit",
       category: "nature",
-      region: "Red River Delta, Central Coast, & Mekong Delta Waterways",
-      atmosphericSummary: "Restless water spirits lurking beneath murky riverbends and deep canal currents, believed to seek living substitutes to free their souls.",
+      region: "Red River & Mekong Delta Waterways",
+      atmosphericSummary: "Restless water spirits said to hide near deep river bends to pull unsuspecting swimmers.",
       image: "assets/images/story-ma-da.jpg",
       articleBottomImage: "https://image.lag.vn/upload/news/19/07/06/su-that-ve-bai-hat-Bac-Kim-Thang__1__XUIB.jpg",
       legend: {
         heading: "THE LEGEND",
-        content: "Ma Da are the feared water spirits of Vietnamese folklore, believed to be the restless souls of people who tragically drowned in rivers, lakes, canals, or deep irrigation ponds. Folk tradition holds that a Ma Da is bound to the cold, murky depths where it died and cannot move on to the afterlife or undergo reincarnation until it finds a living person to drown in its place—a concept known in Vietnamese folklore as 'thế mạng' (substitution). They are described as pale, slippery shadows hiding among submerged roots or river weeds, waiting to seize swimmers by the ankles and drag them into the undertow."
+        content: "Ma Da are famous water spirits in Vietnamese folklore, said to hide under murky riverbanks or deep canals waiting to grab swimmers by the feet."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Because Vietnam is defined by dense river networks, the Mekong Delta, and torrential monsoon floodwaters, stories of Ma Da exist in nearly every river province. In the Southern Delta, Ma Da were often envisioned as small, dark, child-like river creatures with moss-covered skin. In Central Vietnam, fishermen would pour libations of rice wine onto river waters before setting sail to appease these water spirits and protect their nets."
+        heading: "ORIGINS & VARIATIONS",
+        content: "Because Vietnam has so many rivers and canals, Ma Da stories exist in almost every province. Elders told these stories so kids wouldn't swim unsupervised."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "For generations, Ma Da stories served as an indispensable life-saving warning. In agricultural villages where children played near unfenced, murky canals with steep, muddy banks and unpredictable seasonal currents, parents invoked the threat of Ma Da to keep children from swimming unsupervised or wading into dangerous whirlpools."
+        content: "In farming villages near swift river currents, Ma Da warnings saved lives by keeping kids away from slippery banks and deep water."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "The myth directly reflects the genuine lethal dangers of hydrology in a tropical delta nation:\n\n1. <strong>Hydrological Hazards:</strong> Deep river whirlpools, sudden submerged drop-offs, thick water hyacinth mats that entangle limbs, and cold underwater thermoclines that induce sudden muscle cramping (cramp shock).\n\n2. <strong>Survivor Guilt:</strong> The horrific concept of 'thế mạng' provided a metaphysical explanation for recurring drownings at the exact same bend in a river, where dangerous hydraulic vortexes naturally formed."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "Real water hazards: deep whirlpools, sudden cold water shocks, underwater plants that tangle feet, and slippery mud banks."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Similar water spirit legends exist globally, such as the Japanese Kappa, Celtic Kelpie, or Slavic Rusalka, each serving as an ecological warning against perilous water."
+        content: "Similar to water spirit stories worldwide, like the Japanese Kappa or Scottish Kelpie."
       }
     },
     {
       id: "linh-mieu",
       name: "Linh Miêu",
       vietnameseName: "Linh Miêu (Mèo Ma Ám)",
-      epithet: "The Mystic Corpse-Awakener",
+      epithet: "The Mysterious Black Cat",
       category: "nature",
-      region: "Widespread Across Rural & Coastal Vietnam",
-      atmosphericSummary: "A rare, enigmatic black cat born under strange celestial omens, revered and feared for its purported ability to awaken dormant spiritual forces.",
+      region: "Rural & Coastal Vietnam",
+      atmosphericSummary: "A mysterious black cat in folklore associated with omens and night shadows.",
       image: "assets/images/story-linh-mieu.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGN7Fp4njhG69xR_K8ijr-N1GS0WbEzqHNpR2un4QrAjNMwlZawU54L5Y&s=10",
       legend: {
         heading: "THE LEGEND",
-        content: "In Vietnamese folklore, Linh Miêu is not an ordinary domestic feline, but an extraordinary, mysterious black cat surrounded by deep omens. Accounts describe it as having glossy, midnight-black fur, piercing golden or fiery amber eyes, and sometimes a tiny cluster of golden or white hairs between its eyes resembling a 'third eye.' Folk tradition warns that Linh Miêu possesses heightened sensitivity to the spirit realm, capable of seeing invisible wandering specters, and carries a potent energetic force capable of reanimating the recently dead if it leaps over a coffin."
+        content: "Linh Miêu is a mysterious black cat in Vietnamese lore, described as having glowing eyes and silent footsteps, associated with nocturnal omens."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Folkloric origins of Linh Miêu are deeply tied to rural observations of feline behavior. In some coastal and delta villages, a cat born at the exact midnight hour of a full moon or born as the sole kitten of a litter was deemed a Linh Miêu. While feared around death and funerals, in other agrarian contexts certain rare cats were treated with high respect as guardians against rodent plagues that threatened grain storage bins."
+        heading: "ORIGINS & VARIATIONS",
+        content: "Cats were respected on farms for catching mice and protecting rice storage, but their quiet night habits also inspired ghost stories."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "Cats have always occupied a nuanced, dualistic position in Vietnamese culture. Unlike the dog, which was celebrated for straightforward loyalty, the cat was perceived as secretive, fiercely independent, and intrinsically connected to the shadows. This perception made the cat the perfect vessel in the folk imagination for bridging the barrier between the living and the dead."
+        content: "Cats hold a unique spot in folklore—independent, quiet, and active at night."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "Feline biology and physics offer fascinating parallels to this folklore:\n\n1. <strong>Static Electricity:</strong> Feline fur carries significant static electrical charge, especially in dry weather or when moving across woven mats. Folklorists note that old explanations often spoke of 'luồng điện' (electric currents) passing between the cat and the corpse.\n\n2. <strong>Nocturnal Feline Ecology:</strong> A cat's reflective tapetum lucidum (causing their eyes to glow vividly in dim light), silent agility, and ability to track ultrasonic rodent communications made their normal hunting behavior appear otherworldly to human onlookers."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "Feline biology: glowing eyes in dim light, static electricity in cat fur, and silent hunting."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Deeply linked to Quỷ Nhập Tràng, and sharing thematic parallels with Japanese Bakeneko and the global historical association of black cats with supernatural lore."
+        content: "Similar to black cat myths around the world."
       }
     },
     {
@@ -477,29 +475,29 @@ const VNFOLKS_DATA = {
       vietnameseName: "Quỷ Một Giò / Thần Độc Cước",
       epithet: "The One-Legged Coastal Guardian",
       category: "guardians",
-      region: "Coastal Northern Vietnam (Sầm Sơn, Thanh Hóa Province)",
-      atmosphericSummary: "A legendary heroic guardian spirit who voluntarily split his body in two—leaving one half to defend the sea and the other to protect village lands.",
+      region: "Coastal Northern Vietnam (Sầm Sơn, Thanh Hóa)",
+      atmosphericSummary: "A heroic guardian spirit who split his body in half to protect fishermen at sea and farmers on land.",
       image: "assets/images/story-quy-mot-gio.jpg",
       articleBottomImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOVRXc1cQ5j9uopXdqi9EVZOZovhiajSk96ESITiRqOU41dtuEO6zPJlo&s=10",
       legend: {
         heading: "THE LEGEND",
-        content: "While the term 'Quỷ Một Giò' (One-Legged Demon) was occasionally used in rural folk warnings to describe an eerie hopping nocturnal spirit that startled night travelers in the forest, Vietnam's most famous and revered one-legged entity is Thần Độc Cước (The One-Legged God), enshrined atop the historic Cổ Giải mountain in Sầm Sơn, Thanh Hóa province.\n\nAccording to the heroic legend, during ancient times, coastal villagers were caught between two terrible perils: vicious sea monsters attacking fishing boats offshore, and predatory beasts ravaging their homes from inland mountains. To save his people, a giant hero took a mighty axe and cleaved his own body into two equal vertical halves: one leg and arm remained on the coastline to battle the sea monsters, while the other leg and arm stood on the mountain peak to defend the farming villagers."
+        content: "Thần Độc Cước (The One-Legged God) is a famous hero guardian in Sầm Sơn, Thanh Hóa. According to legend, a giant hero split himself in two to guard sea fishermen with one half while protecting land farmers with the other."
       },
       origins: {
-        heading: "ORIGINS & REGIONAL VARIATIONS",
-        content: "Folklore records show a fascinating duality: in local seaside hagiography, Độc Cước is venerated as a benevolent, self-sacrificing deity whose temple still stands proudly in Sầm Sơn today, officially recognized in imperial court decrees. Conversely, in upland and forest folklore, 'Quỷ Một Giò' was sometimes used as an informal cautionary term for elusive, hopping forest phantoms that villagers believed stalked remote mountain passes."
+        heading: "ORIGINS & VARIATIONS",
+        content: "His temple still stands on Cổ Giải mountain in Sầm Sơn, where coastal fishermen pray for peaceful ocean voyages."
       },
       culturalContext: {
         heading: "CULTURAL CONTEXT",
-        content: "Coastal Vietnamese communities faced unrelenting perils from typhoons, pirate raids, and maritime hazards. Veneration of Độc Cước gave fishermen courage before setting out into the deep sea. The temple in Sầm Sơn remains a vibrant pilgrimage site where fishermen hold annual festivals to pray for calm waters and safe voyages."
+        content: "Seaside fishing was dangerous. Praying to Độc Cước gave fishermen courage before sailing into storms."
       },
       whatReflects: {
-        heading: "WHAT THE STORY MAY REFLECT",
-        content: "The legend reflects the profound theme of noble self-sacrifice for the survival of the collective community. It also captures early humans' awe when observing singular geological formations—such as giant solitary footprints in coastal granite rocks—which were explained through heroic mythical combat."
+        heading: "WHAT THE STORY REFLECTS",
+        content: "Themes of courage and protecting your community."
       },
       relatedBeliefs: {
         heading: "RELATED BELIEFS",
-        content: "Connected to Vietnamese marine tutelary deities such as Cá Ông (the sacred Whale God) and ancient Dong Son guardian mythologies."
+        content: "Connected with coastal marine guardian legends in Vietnam."
       }
     }
   ]
