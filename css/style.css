@@ -1,43 +1,27 @@
-/* ==========================================================================
-   VN FOLKS — Digital Folklore Archive
-   Main Stylesheet & Design System
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  /* Official Palette */
-  --c-golden-butter: #E8D1A7;
-  --c-toasted-caramel: #84592B;
-  --c-spiced-wine: #743014;
-  --c-olive-harvest: #9D9167;
-  --c-cowhide-cocoa: #442D1C;
+  --gold: #E8D1A7;
+  --brown: #84592B;
+  --wine: #743014;
+  --olive: #9D9167;
+  --dark-brown: #442D1C;
 
-  /* Atmospheric Parchment & Dark Tones */
-  --bg-parchment: #F4EAD8;
-  --bg-parchment-warm: #EBDDC3;
-  --bg-dark-archive: #1B110A;
-  --bg-dark-card: #251810;
-  --bg-modal-overlay: rgba(18, 10, 6, 0.88);
+  --bg-light: #F4EAD8;
+  --bg-warm: #EBDDC3;
+  --bg-dark: #1B110A;
+  --bg-card-dark: #251810;
+  --bg-overlay: rgba(18, 10, 6, 0.88);
 
-  /* Typography Variables */
   --font-display: 'Creepster', cursive, serif;
   --font-heading: 'Cormorant Garamond', 'Georgia', serif;
   --font-body: 'EB Garamond', 'Times New Roman', serif;
 
-  /* Borders & Dividers */
-  --border-fine: 1px solid rgba(132, 89, 43, 0.28);
-  --border-gold: 1px solid rgba(232, 209, 167, 0.35);
-  --border-wine: 1px solid rgba(116, 48, 20, 0.4);
-
-  /* Transitions */
   --tr-fast: 0.2s ease;
-  --tr-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --tr-smooth: 0.3s ease;
 }
 
-/* --------------------------------------------------------------------------
-   Reset & Base Setup
-   -------------------------------------------------------------------------- */
+/* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -47,8 +31,8 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  background-color: var(--bg-parchment);
-  color: var(--c-cowhide-cocoa);
+  background-color: var(--bg-light);
+  color: var(--dark-brown);
 }
 
 body {
@@ -57,7 +41,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-parchment);
+  background-color: var(--bg-light);
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(232, 209, 167, 0.25) 0%, transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(132, 89, 43, 0.08) 0%, transparent 50%),
@@ -66,9 +50,7 @@ body {
   overflow-x: hidden;
 }
 
-/* --------------------------------------------------------------------------
-   Global Layout Containers
-   -------------------------------------------------------------------------- */
+/* Containers */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -80,9 +62,7 @@ body {
   max-width: 960px;
 }
 
-/* --------------------------------------------------------------------------
-   Header & Navigation
-   -------------------------------------------------------------------------- */
+/* Header & Navigation */
 .site-header {
   position: sticky;
   top: 0;
@@ -108,7 +88,7 @@ body {
 .site-logo {
   display: inline-block;
   text-decoration: none;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   font-family: var(--font-display);
   font-size: 1.85rem;
   font-weight: 400;
@@ -117,7 +97,7 @@ body {
 }
 
 .site-header.dark-header .site-logo {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .site-logo:hover {
@@ -139,14 +119,14 @@ body {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   position: relative;
   padding: 0.4rem 0;
   transition: color var(--tr-fast);
 }
 
 .site-header.dark-header .nav-item a {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .nav-item a::after {
@@ -156,12 +136,12 @@ body {
   left: 0;
   width: 0%;
   height: 1px;
-  background-color: var(--c-spiced-wine);
+  background-color: var(--wine);
   transition: width var(--tr-smooth);
 }
 
 .site-header.dark-header .nav-item a::after {
-  background-color: var(--c-golden-butter);
+  background-color: var(--gold);
 }
 
 .nav-item a:hover::after,
@@ -171,7 +151,7 @@ body {
 
 .nav-item a:hover,
 .nav-item a.active {
-  color: var(--c-spiced-wine);
+  color: var(--wine);
 }
 
 .site-header.dark-header .nav-item a:hover,
@@ -179,18 +159,18 @@ body {
   color: #fff;
 }
 
-/* Mobile Nav Toggle */
+/* Mobile Navigation */
 .mobile-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 .site-header.dark-header .mobile-toggle {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .hamburger-line {
@@ -202,15 +182,14 @@ body {
   transition: transform var(--tr-smooth), opacity var(--tr-smooth);
 }
 
-/* Mobile Nav Drawer */
 .mobile-nav-drawer {
   display: none;
   position: fixed;
   top: 80px;
   left: 0;
   width: 100%;
-  background-color: var(--bg-parchment-warm);
-  border-bottom: 2px solid var(--c-toasted-caramel);
+  background-color: var(--bg-warm);
+  border-bottom: 2px solid var(--brown);
   padding: 2rem 0;
   z-index: 999;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -218,8 +197,8 @@ body {
 
 .site-header.dark-header + .mobile-nav-drawer,
 body.dark-mode .mobile-nav-drawer {
-  background-color: var(--bg-dark-card);
-  border-bottom: 2px solid var(--c-spiced-wine);
+  background-color: var(--bg-card-dark);
+  border-bottom: 2px solid var(--wine);
 }
 
 .mobile-nav-drawer.open {
@@ -241,20 +220,18 @@ body.dark-mode .mobile-nav-drawer {
   font-size: 1.25rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 body.dark-mode .mobile-nav-links a {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
-/* --------------------------------------------------------------------------
-   Typography & Atmospheric Elements
-   -------------------------------------------------------------------------- */
+/* Typography */
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   line-height: 1.25;
 }
 
@@ -273,11 +250,10 @@ p {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.8;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   opacity: 0.9;
 }
 
-/* Ornamental Horizontal Divider */
 .ornamental-divider {
   display: flex;
   align-items: center;
@@ -291,7 +267,7 @@ p {
 .divider-line {
   flex: 1;
   height: 1px;
-  background-color: var(--c-toasted-caramel);
+  background-color: var(--brown);
 }
 
 /* Buttons */
@@ -307,9 +283,9 @@ p {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 0.85rem 2.2rem;
-  border: 1px solid var(--c-cowhide-cocoa);
+  border: 1px solid var(--dark-brown);
   background-color: transparent;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   cursor: pointer;
   position: relative;
   transition: all var(--tr-smooth);
@@ -327,8 +303,8 @@ p {
 }
 
 .btn-archive:hover {
-  background-color: var(--c-cowhide-cocoa);
-  color: var(--c-golden-butter);
+  background-color: var(--dark-brown);
+  color: var(--gold);
   box-shadow: 0 6px 18px rgba(68, 45, 28, 0.2);
   transform: translateY(-2px);
 }
@@ -338,28 +314,26 @@ p {
 }
 
 .btn-archive.btn-wine {
-  border-color: var(--c-spiced-wine);
-  color: var(--c-spiced-wine);
+  border-color: var(--wine);
+  color: var(--wine);
 }
 
 .btn-archive.btn-wine:hover {
-  background-color: var(--c-spiced-wine);
-  color: var(--c-golden-butter);
+  background-color: var(--wine);
+  color: var(--gold);
 }
 
 .btn-archive.btn-gold {
-  border-color: var(--c-golden-butter);
-  color: var(--c-golden-butter);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .btn-archive.btn-gold:hover {
-  background-color: var(--c-golden-butter);
-  color: var(--c-cowhide-cocoa);
+  background-color: var(--gold);
+  color: var(--dark-brown);
 }
 
-/* --------------------------------------------------------------------------
-   HOMEPAGE SPECIFIC (Matching Reference Image)
-   -------------------------------------------------------------------------- */
+/* Home Page Hero */
 .home-hero-section {
   position: relative;
   width: 100%;
@@ -373,7 +347,6 @@ p {
   border-bottom: 1px solid rgba(132, 89, 43, 0.35);
 }
 
-/* Desktop reference image background setup */
 .hero-visual-canvas {
   position: absolute;
   top: 0;
@@ -388,7 +361,6 @@ p {
   z-index: 1;
 }
 
-/* Subtle overlay vignette for readability */
 .hero-vignette {
   position: absolute;
   top: 0;
@@ -400,7 +372,6 @@ p {
   pointer-events: none;
 }
 
-/* Hero Centered Typography */
 .hero-content {
   position: relative;
   z-index: 3;
@@ -415,7 +386,7 @@ p {
   font-size: 1.15rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   margin-bottom: 0.5rem;
   opacity: 0.9;
 }
@@ -425,7 +396,7 @@ p {
   font-size: clamp(3.8rem, 8.5vw, 7.2rem);
   font-weight: 400;
   letter-spacing: 0.12em;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   text-shadow: 0 3px 6px rgba(68, 45, 28, 0.15);
   margin-bottom: 1.2rem;
   line-height: 1.1;
@@ -435,21 +406,15 @@ p {
   font-family: var(--font-heading);
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   font-style: italic;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   letter-spacing: 0.05em;
   line-height: 1.6;
   margin-bottom: 0;
 }
 
-/* Responsive fallback elements for screens where background image crops */
-.hero-responsive-elements {
-  display: none; /* Only triggered in mobile breakpoint */
-}
-
-/* Home Intro Section Below Hero */
 .home-intro-section {
   padding: 5.5rem 0;
-  background-color: var(--bg-parchment);
+  background-color: var(--bg-light);
   border-bottom: 1px solid rgba(132, 89, 43, 0.25);
   text-align: center;
 }
@@ -464,16 +429,16 @@ p {
   font-size: clamp(1.25rem, 2.6vw, 1.65rem);
   font-style: italic;
   line-height: 1.8;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   margin-bottom: 2.5rem;
   position: relative;
   padding: 0 1rem;
 }
 
-/* Four Pillars Featurette */
+/* Four Pillars Grid */
 .home-pillars-section {
   padding: 5rem 0;
-  background-color: var(--bg-parchment-warm);
+  background-color: var(--bg-warm);
 }
 
 .section-label {
@@ -481,7 +446,7 @@ p {
   font-size: 0.95rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   text-align: center;
   margin-bottom: 0.6rem;
   display: block;
@@ -491,7 +456,7 @@ p {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   text-align: center;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   margin-bottom: 1.2rem;
 }
 
@@ -513,7 +478,7 @@ p {
 }
 
 .pillar-card {
-  background-color: var(--bg-parchment);
+  background-color: var(--bg-light);
   border: 1px solid rgba(132, 89, 43, 0.3);
   padding: 2.2rem 1.6rem;
   text-align: center;
@@ -523,7 +488,7 @@ p {
 .pillar-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(68, 45, 28, 0.12);
-  border-color: var(--c-spiced-wine);
+  border-color: var(--wine);
 }
 
 .pillar-title {
@@ -540,14 +505,12 @@ p {
   margin-bottom: 0;
 }
 
-/* --------------------------------------------------------------------------
-   Footer Section
-   -------------------------------------------------------------------------- */
+/* Footer */
 .site-footer {
   margin-top: auto;
-  background-color: var(--bg-dark-archive);
-  color: var(--c-golden-butter);
-  border-top: 2px solid var(--c-spiced-wine);
+  background-color: var(--bg-dark);
+  color: var(--gold);
+  border-top: 2px solid var(--wine);
   padding: 4.5rem 0 2.5rem;
 }
 
@@ -563,7 +526,7 @@ p {
   font-family: var(--font-display);
   font-size: 1.6rem;
   letter-spacing: 0.2em;
-  color: var(--c-golden-butter);
+  color: var(--gold);
   margin-bottom: 0.8rem;
 }
 
@@ -580,7 +543,7 @@ p {
   font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--c-golden-butter);
+  color: var(--gold);
   margin-bottom: 1.2rem;
 }
 
@@ -618,9 +581,7 @@ p {
   opacity: 0.65;
 }
 
-/* --------------------------------------------------------------------------
-   Animations
-   -------------------------------------------------------------------------- */
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
@@ -635,9 +596,7 @@ p {
   animation: fadeIn 0.8s var(--tr-smooth) forwards;
 }
 
-/* --------------------------------------------------------------------------
-   Responsive Breakpoints
-   -------------------------------------------------------------------------- */
+/* Responsive Media Queries */
 @media (max-width: 900px) {
   .nav-links {
     display: none;
