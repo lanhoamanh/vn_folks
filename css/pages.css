@@ -1,26 +1,21 @@
-/* ==========================================================================
-   VN FOLKS — Page Components (Explore, Stories, About & Modals)
-   ========================================================================== */
+/* Page styles for Explore, Stories, About, and Modals */
 
-/* --------------------------------------------------------------------------
-   Page Header Banner
-   -------------------------------------------------------------------------- */
 .archive-page-header {
   padding: 4.5rem 0 3.5rem;
   text-align: center;
   position: relative;
   border-bottom: 1px solid rgba(132, 89, 43, 0.25);
-  background-color: var(--bg-parchment-warm);
+  background-color: var(--bg-warm);
 }
 
 .archive-page-header.dark-banner {
-  background-color: var(--bg-dark-archive);
+  background-color: var(--bg-dark);
   border-bottom: 1px solid rgba(232, 209, 167, 0.2);
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .archive-page-header.dark-banner h1 {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .archive-page-header.dark-banner .page-subtitle {
@@ -32,13 +27,13 @@
   font-size: 0.95rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   margin-bottom: 0.8rem;
   display: block;
 }
 
 .dark-banner .page-category-tag {
-  color: var(--c-golden-butter);
+  color: var(--gold);
   opacity: 0.9;
 }
 
@@ -60,9 +55,7 @@
   opacity: 0.9;
 }
 
-/* --------------------------------------------------------------------------
-   EXPLORE PAGE ARCHIVE GRID
-   -------------------------------------------------------------------------- */
+/* Explore Grid */
 .explore-main-section {
   padding: 4.5rem 0 6rem;
 }
@@ -74,7 +67,7 @@
 }
 
 .explore-card {
-  background-color: var(--bg-parchment);
+  background-color: var(--bg-light);
   border: 1px solid rgba(132, 89, 43, 0.35);
   display: flex;
   flex-direction: column;
@@ -84,7 +77,7 @@
 
 .explore-card:hover {
   transform: translateY(-6px);
-  border-color: var(--c-spiced-wine);
+  border-color: var(--wine);
   box-shadow: 0 12px 28px rgba(68, 45, 28, 0.14);
 }
 
@@ -116,7 +109,7 @@
   right: 14px;
   background-color: rgba(68, 45, 28, 0.88);
   backdrop-filter: blur(4px);
-  color: var(--c-golden-butter);
+  color: var(--gold);
   font-family: var(--font-heading);
   font-size: 0.78rem;
   letter-spacing: 0.12em;
@@ -137,14 +130,14 @@
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-style: italic;
-  color: var(--c-toasted-caramel);
+  color: var(--brown);
   margin-bottom: 0.4rem;
 }
 
 .explore-card-title {
   font-family: var(--font-heading);
   font-size: 1.55rem;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   margin-bottom: 0.8rem;
   line-height: 1.3;
 }
@@ -152,7 +145,7 @@
 .explore-card-desc {
   font-size: 1rem;
   line-height: 1.65;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   opacity: 0.88;
   margin-bottom: 2rem;
   flex: 1;
@@ -169,8 +162,8 @@
   justify-content: center;
   padding: 0.8rem 1.4rem;
   background-color: transparent;
-  border: 1px solid var(--c-toasted-caramel);
-  color: var(--c-cowhide-cocoa);
+  border: 1px solid var(--brown);
+  color: var(--dark-brown);
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 600;
@@ -181,27 +174,24 @@
 }
 
 .btn-discover:hover {
-  background-color: var(--c-toasted-caramel);
-  color: var(--c-golden-butter);
+  background-color: var(--brown);
+  color: var(--gold);
 }
 
-/* --------------------------------------------------------------------------
-   STORIES PAGE (DARK ARCHIVE)
-   -------------------------------------------------------------------------- */
+/* Stories Page */
 body.dark-stories-page {
-  background-color: var(--bg-dark-archive);
+  background-color: var(--bg-dark);
   background-image: 
     radial-gradient(circle at 10% 10%, rgba(116, 48, 20, 0.15) 0%, transparent 40%),
     radial-gradient(circle at 90% 90%, rgba(68, 45, 28, 0.2) 0%, transparent 50%),
     linear-gradient(180deg, #18100a 0%, #120905 100%);
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .stories-main-section {
   padding: 3rem 0 6rem;
 }
 
-/* Category Filter Bar */
 .filter-bar-wrapper {
   display: flex;
   justify-content: center;
@@ -226,12 +216,11 @@ body.dark-stories-page {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: var(--c-spiced-wine);
-  border-color: var(--c-golden-butter);
-  color: var(--c-golden-butter);
+  background-color: var(--wine);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
-/* Stories Grid */
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -239,7 +228,7 @@ body.dark-stories-page {
 }
 
 .story-card {
-  background-color: var(--bg-dark-card);
+  background-color: var(--bg-card-dark);
   border: 1px solid rgba(157, 145, 103, 0.25);
   display: flex;
   flex-direction: column;
@@ -249,7 +238,7 @@ body.dark-stories-page {
 
 .story-card:hover {
   transform: translateY(-6px);
-  border-color: var(--c-golden-butter);
+  border-color: var(--gold);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -286,14 +275,14 @@ body.dark-stories-page {
   font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--c-olive-harvest);
+  color: var(--olive);
   margin-bottom: 0.5rem;
 }
 
 .story-card-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--c-golden-butter);
+  color: var(--gold);
   margin-bottom: 0.3rem;
 }
 
@@ -301,7 +290,7 @@ body.dark-stories-page {
   font-family: var(--font-heading);
   font-size: 1rem;
   font-style: italic;
-  color: var(--c-toasted-caramel);
+  color: var(--brown);
   margin-bottom: 1rem;
 }
 
@@ -320,8 +309,8 @@ body.dark-stories-page {
   justify-content: center;
   padding: 0.8rem 1.4rem;
   background-color: transparent;
-  border: 1px solid var(--c-spiced-wine);
-  color: var(--c-golden-butter);
+  border: 1px solid var(--wine);
+  color: var(--gold);
   font-family: var(--font-heading);
   font-size: 0.9rem;
   font-weight: 600;
@@ -332,17 +321,15 @@ body.dark-stories-page {
 }
 
 .btn-read-story:hover {
-  background-color: var(--c-spiced-wine);
+  background-color: var(--wine);
   color: #fff;
-  border-color: var(--c-golden-butter);
+  border-color: var(--gold);
 }
 
-/* --------------------------------------------------------------------------
-   ABOUT PAGE EDITORIAL STYLING
-   -------------------------------------------------------------------------- */
+/* About Page */
 .about-manifesto-hero {
   padding: 5rem 0 3.5rem;
-  background-color: var(--bg-parchment-warm);
+  background-color: var(--bg-warm);
   border-bottom: 1px solid rgba(132, 89, 43, 0.3);
 }
 
@@ -359,7 +346,7 @@ body.dark-stories-page {
   font-size: clamp(1.2rem, 2.2vw, 1.55rem);
   font-style: italic;
   line-height: 1.8;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   margin-bottom: 2rem;
 }
 
@@ -385,7 +372,7 @@ body.dark-stories-page {
   font-family: var(--font-display);
   font-size: 1rem;
   letter-spacing: 0.2em;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   display: block;
   margin-bottom: 0.4rem;
 }
@@ -393,20 +380,18 @@ body.dark-stories-page {
 .article-title {
   font-family: var(--font-heading);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 .about-article p {
   font-size: 1.1rem;
   line-height: 1.85;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
   opacity: 0.9;
   margin-bottom: 1.4rem;
 }
 
-/* --------------------------------------------------------------------------
-   INTERACTIVE DOSSIER / MODAL SYSTEM
-   -------------------------------------------------------------------------- */
+/* Modal Popup */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -414,7 +399,7 @@ body.dark-stories-page {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-modal-overlay);
+  background-color: var(--bg-overlay);
   backdrop-filter: blur(6px);
   z-index: 2000;
   overflow-y: auto;
@@ -428,8 +413,8 @@ body.dark-stories-page {
 }
 
 .modal-window {
-  background-color: var(--bg-parchment);
-  border: 2px solid var(--c-toasted-caramel);
+  background-color: var(--bg-light);
+  border: 2px solid var(--brown);
   width: 100%;
   max-width: 900px;
   margin: auto;
@@ -440,8 +425,8 @@ body.dark-stories-page {
 
 .dark-modal {
   background-color: #1c120b;
-  border-color: var(--c-golden-butter);
-  color: var(--c-golden-butter);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .modal-close-btn {
@@ -451,8 +436,8 @@ body.dark-stories-page {
   width: 40px;
   height: 40px;
   background-color: rgba(68, 45, 28, 0.15);
-  border: 1px solid var(--c-toasted-caramel);
-  color: var(--c-cowhide-cocoa);
+  border: 1px solid var(--brown);
+  color: var(--dark-brown);
   font-size: 1.6rem;
   display: flex;
   align-items: center;
@@ -464,12 +449,12 @@ body.dark-stories-page {
 
 .dark-modal .modal-close-btn {
   background-color: rgba(232, 209, 167, 0.15);
-  border-color: var(--c-golden-butter);
-  color: var(--c-golden-butter);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .modal-close-btn:hover {
-  background-color: var(--c-spiced-wine);
+  background-color: var(--wine);
   color: #fff;
 }
 
@@ -487,12 +472,12 @@ body.dark-stories-page {
   font-size: 0.95rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   margin-bottom: 0.4rem;
 }
 
 .dark-modal .modal-pretitle {
-  color: var(--c-toasted-caramel);
+  color: var(--brown);
 }
 
 .modal-title {
@@ -500,11 +485,11 @@ body.dark-stories-page {
   font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   line-height: 1.25;
   margin-bottom: 0.5rem;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 .dark-modal .modal-title {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .modal-viet-subtitle {
@@ -520,7 +505,6 @@ body.dark-stories-page {
   overflow-y: auto;
 }
 
-/* Dossier Section Block */
 .dossier-block {
   margin-bottom: 2.4rem;
   padding-bottom: 2rem;
@@ -542,7 +526,7 @@ body.dark-stories-page {
   font-size: 1.15rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
@@ -550,7 +534,7 @@ body.dark-stories-page {
 }
 
 .dark-modal .dossier-heading {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
 .dossier-text {
@@ -566,15 +550,14 @@ body.dark-stories-page {
 .dossier-block strong,
 .dossier-block b {
   font-weight: 700;
-  color: var(--c-spiced-wine);
+  color: var(--wine);
 }
 
 .dark-modal .dossier-block strong,
 .dark-modal .dossier-block b {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
-/* Structured Numbered & Bulleted Lists */
 .dossier-numbered-list,
 .dossier-point-list {
   list-style: decimal;
@@ -588,7 +571,7 @@ body.dark-stories-page {
 .dossier-point-item {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 .dark-modal .dossier-numbered-item,
@@ -632,16 +615,14 @@ body.dark-stories-page {
   top: 0.65em;
   width: 6px;
   height: 1px;
-  background-color: var(--c-toasted-caramel);
+  background-color: var(--brown);
 }
 
 .dark-modal .dossier-sources-list li::before {
-  background-color: var(--c-golden-butter);
+  background-color: var(--gold);
 }
 
-/* --------------------------------------------------------------------------
-   Article Bottom Illustration Area (Explore & Stories)
-   -------------------------------------------------------------------------- */
+/* Modal Bottom Image */
 .article-bottom-section {
   margin-top: 3.2rem;
   padding-top: 2.4rem;
@@ -652,80 +633,6 @@ body.dark-stories-page {
   border-top-color: rgba(232, 209, 167, 0.18);
 }
 
-/* Styled Empty Placeholder when no image URL is provided */
-.article-image-placeholder {
-  background: rgba(232, 209, 167, 0.22);
-  border: 2px dashed rgba(132, 89, 43, 0.38);
-  border-radius: 8px;
-  padding: 2.5rem 1.8rem;
-  text-align: center;
-  transition: border-color var(--tr-smooth), background-color var(--tr-smooth);
-}
-
-.dark-modal .article-image-placeholder {
-  background: rgba(25, 16, 11, 0.7);
-  border-color: rgba(232, 209, 167, 0.28);
-}
-
-.placeholder-badge {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-toasted-caramel);
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-}
-
-.dark-modal .placeholder-badge {
-  color: var(--c-golden-butter);
-  opacity: 0.85;
-}
-
-.placeholder-heading {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  color: var(--c-cowhide-cocoa);
-  margin-bottom: 0.6rem;
-}
-
-.dark-modal .placeholder-heading {
-  color: var(--c-golden-butter);
-}
-
-.placeholder-desc {
-  font-size: 0.98rem;
-  font-style: italic;
-  opacity: 0.85;
-  max-width: 580px;
-  margin: 0 auto 1.2rem;
-  line-height: 1.6;
-}
-
-.placeholder-code-container {
-  display: flex;
-  justify-content: center;
-}
-
-.placeholder-code-snippet {
-  background: rgba(68, 45, 28, 0.08);
-  border: 1px solid rgba(132, 89, 43, 0.25);
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.88rem;
-  color: var(--c-cowhide-cocoa);
-  word-break: break-all;
-}
-
-.dark-modal .placeholder-code-snippet {
-  background: rgba(0, 0, 0, 0.4);
-  border-color: rgba(232, 209, 167, 0.25);
-  color: var(--c-golden-butter);
-}
-
-/* Active Image Rendering */
 .article-bottom-figure {
   margin: 0;
   text-align: center;
@@ -753,14 +660,14 @@ body.dark-stories-page {
   margin-top: 1rem;
   opacity: 0.85;
   letter-spacing: 0.05em;
-  color: var(--c-cowhide-cocoa);
+  color: var(--dark-brown);
 }
 
 .dark-modal .article-bottom-caption {
-  color: var(--c-golden-butter);
+  color: var(--gold);
 }
 
-/* Responsive Modals */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .explore-grid,
   .stories-grid {
