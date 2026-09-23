@@ -1,15 +1,14 @@
 # VNfolks 👻
 
-Hey! Welcome to **VNfolks**, a small website I built for a school project about Vietnamese folklore, urban legends, and ghost stories.
+Hi there! Growing up, I heard all sorts of spooky tales from my grandparents and parents—stories about sleep paralysis (the sensation of a ghostly figure pinning you down by the chest), children playing with haunted tin cans (*Ma Lon*), or water spirits lurking by the riverbanks (*Ma Da*).
+That’s why I wanted to create a website dedicated to Vietnamese supernatural stories—to help people better understand my homeland's culture. And so, VNfolks was born.
 
-Growing up, my parents and grandparents told me all kinds of scary stories—like shadow spirits sitting on your chest (*Bóng Đè*), kids playing with a possessed tin can (*Ma Lon*), or water ghosts lurking near rivers (*Ma Da*). 
-
-I wanted to make a site where people can read these stories, but also learn a bit about the science and history behind them! Like how *Bóng Đè* is actually connected to sleep paralysis, or how old eclipse myths came from people watching the sky.
+I wanted to build a space where people could not only read these stories but also explore the science and history behind them. For instance, the phenomenon of "being pinned down by a ghost" is actually linked to sleep paralysis, while ancient legends about solar and lunar eclipses stem from early human observations of the sky.
 
 Live demo: **[https://vnfolk.vercel.app/](https://vnfolk.vercel.app/)**
 
 ![Screenshot 1](./assets/screenshort1.png)
-![Screenshot 2](./assets/screenshort2.png)
+
 
 ---
 
