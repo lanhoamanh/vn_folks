@@ -1,329 +1,264 @@
-// Main JavaScript for VNfolks website
+// VN FOLKS - Main Application Logic
+// Lightweight vanilla JS for content rendering, modal handling, and UI interactions.
 
-document.addEventListener('DOMContentLoaded', function () {
-  initMobileMenu();
-  initExplorePage();
-  initStoriesPage();
+document.addEventListener('DOMContentLoaded', () => {
+  setupNav();
+  initExplore();
+  initStories();
   initModals();
 });
 
-// Mobile navigation menu
-function initMobileMenu() {
-  var menuBtn = document.querySelector('.mobile-toggle');
-  var drawer = document.querySelector('.mobile-nav-drawer');
+// Mobile Drawer Navigation
+function setupNav() {
+  const toggleBtn = document.querySelector('.mobile-toggle');
+  const drawer = document.querySelector('.mobile-nav-drawer');
 
-  if (!menuBtn || !drawer) return;
+  if (!toggleBtn || !drawer) return;
 
-  menuBtn.addEventListener('click', function () {
+  toggleBtn.addEventListener('click', () => {
     drawer.classList.toggle('open');
   });
 
-  // Close menu when clicking links inside drawer
-  var links = drawer.querySelectorAll('a');
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function () {
-      drawer.classList.remove('open');
-    });
-  }
+  // Close drawer when clicking nav links
+  drawer.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => drawer.classList.remove('open'));
+  });
 
-  // Close menu when clicking outside
-  document.addEventListener('click', function (e) {
-    if (!drawer.contains(e.target) && !menuBtn.contains(e.target)) {
+  // Dismiss menu when clicking outside navigation
+  document.addEventListener('click', (e) => {
+    if (!drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
       drawer.classList.remove('open');
     }
   });
 }
 
-// Convert paragraph text into HTML paragraphs and numbered lists
+// Simple text block parser for dynamic modal content
 function formatText(text) {
   if (!text) return '';
 
-  var parts = text.trim().split('\n\n');
-  var result = '';
+  return text
+    .trim()
+    .split('\n\n')
+    .map(block => {
+      let trimmed = block.trim();
+      if (!trimmed) return '';
 
-  for (var i = 0; i < parts.length; i++) {
-    var block = parts[i].trim();
-    if (!block) continue;
-
-    if (/^\d+\./.test(block)) {
-      var lines = block.split('\n');
-      result += '<ol class="dossier-numbered-list">';
-      for (var j = 0; j < lines.length; j++) {
-        var cleanLine = lines[j].replace(/^\d+\.\s*/, '').trim();
-        result += '<li>' + cleanLine + '</li>';
+      // Check if block represents an ordered list
+      if (/^\d+\./.test(trimmed)) {
+        const items = trimmed
+          .split('\n')
+          .map(line => `<li>${line.replace(/^\d+\.\s*/, '').trim()}</li>`)
+          .join('');
+        return `<ol class="dossier-numbered-list">${items}</ol>`;
       }
-      result += '</ol>';
-    } else {
-      result += '<p class="dossier-text">' + block + '</p>';
-    }
-  }
 
-  return result;
+      return `<p class="dossier-text">${trimmed}</p>`;
+    })
+    .join('');
 }
 
-// Add bottom illustration to modal if available
-function getBottomImageHtml(imageUrl, title) {
-  if (!imageUrl || imageUrl.includes('PASTE_IMAGE_URL')) return '';
+// Helper to render dynamic article bottom illustrations
+const getBottomImg = (url, title) => {
+  if (!url || url.includes('PASTE_IMAGE_URL')) return '';
 
-  return '<div class="article-bottom-section">' +
-    '<figure class="article-bottom-figure">' +
-      '<img src="' + imageUrl + '" alt="' + title + '" class="article-bottom-image" loading="lazy">' +
-      '<figcaption class="article-bottom-caption">Illustration: ' + title + '</figcaption>' +
-    '</figure>' +
-  '</div>';
-}
+  return `
+    <div class="article-bottom-section">
+      <figure class="article-bottom-figure">
+        <img src="${url}" alt="${title}" class="article-bottom-image" loading="lazy" />
+        <figcaption class="article-bottom-caption">Illustration: ${title}</figcaption>
+      </figure>
+    </div>
+  `;
+};
 
-// Render cards on the Explore page
-function initExplorePage() {
-  var container = document.getElementById('explore-grid-container');
+// Explore Page Card Renderer
+function initExplore() {
+  const container = document.getElementById('explore-grid-container');
   if (!container || typeof VNFOLKS_DATA === 'undefined') return;
 
-  container.innerHTML = '';
+  container.innerHTML = VNFOLKS_DATA.explore.map(item => `
+    <article class="explore-card" data-id="${item.id}">
+      <div class="explore-card-media">
+        <img src="${item.image}" alt="${item.title}" loading="lazy" />
+        <span class="card-badge">${item.badge}</span>
+      </div>
+      <div class="explore-card-content">
+        <span class="card-viet-name">${item.vietnameseName}</span>
+        <h3 class="explore-card-title">${item.title}</h3>
+        <p class="explore-card-desc">${item.summary}</p>
+        <div class="card-action-bar">
+          <button class="btn-discover" data-explore-id="${item.id}">
+            <span>Discover Archive</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join('');
 
-  var exploreList = VNFOLKS_DATA.explore;
-  for (var i = 0; i < exploreList.length; i++) {
-    var item = exploreList[i];
-    var card = document.createElement('article');
-    card.className = 'explore-card';
-    card.setAttribute('data-id', item.id);
-
-    card.innerHTML = 
-      '<div class="explore-card-media">' +
-        '<img src="' + item.image + '" alt="' + item.title + '" loading="lazy">' +
-        '<span class="card-badge">' + item.badge + '</span>' +
-      '</div>' +
-      '<div class="explore-card-content">' +
-        '<span class="card-viet-name">' + item.vietnameseName + '</span>' +
-        '<h3 class="explore-card-title">' + item.title + '</h3>' +
-        '<p class="explore-card-desc">' + item.summary + '</p>' +
-        '<div class="card-action-bar">' +
-          '<button class="btn-discover" data-explore-id="' + item.id + '">' +
-            '<span>Discover Archive</span>' +
-          '</button>' +
-        '</div>' +
-      '</div>';
-
-    container.appendChild(card);
-  }
-
-  container.addEventListener('click', function (e) {
-    var btn = e.target.closest('.btn-discover');
+  // Event delegation for explore popup triggers
+  container.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-discover');
     if (btn) {
-      var itemId = btn.getAttribute('data-explore-id');
-      showExploreModal(itemId);
+      openExploreModal(btn.dataset.exploreId);
     }
   });
 }
 
-// Show modal popup for Explore topics
-function showExploreModal(itemId) {
-  var item = null;
-  for (var i = 0; i < VNFOLKS_DATA.explore.length; i++) {
-    if (VNFOLKS_DATA.explore[i].id === itemId) {
-      item = VNFOLKS_DATA.explore[i];
-      break;
-    }
-  }
+function openExploreModal(id) {
+  const item = VNFOLKS_DATA.explore.find(entry => entry.id === id);
   if (!item) return;
 
-  var modal = document.getElementById('explore-modal');
-  var modalBox = modal.querySelector('.modal-window');
+  const modal = document.getElementById('explore-modal');
+  const modalBox = modal.querySelector('.modal-window');
 
-  var sourcesHtml = '';
-  if (item.sources) {
-    for (var s = 0; s < item.sources.length; s++) {
-      sourcesHtml += '<li>' + item.sources[s] + '</li>';
-    }
+  let sourcesHtml = '';
+  if (item.sources && item.sources.length) {
+    const list = item.sources.map(src => `<li>${src}</li>`).join('');
+    sourcesHtml = `
+      <div class="dossier-block">
+        <h4 class="dossier-heading">References &amp; Sources</h4>
+        <ul class="dossier-sources-list">${list}</ul>
+      </div>
+    `;
   }
 
-  modalBox.innerHTML = 
-    '<button class="modal-close-btn" aria-label="Close">&times;</button>' +
-    '<div class="modal-header-section">' +
-      '<span class="modal-pretitle">' + item.badge + '</span>' +
-      '<h2 class="modal-title">' + item.title + '</h2>' +
-      '<p class="modal-viet-subtitle">' + item.vietnameseName + ' &mdash; ' + item.subtitle + '</p>' +
-    '</div>' +
-    '<div class="modal-body-content">' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + item.belief.heading + '</h4>' +
-        formatText(item.belief.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + item.culturalStory.heading + '</h4>' +
-        formatText(item.culturalStory.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + item.historicalContext.heading + '</h4>' +
-        formatText(item.historicalContext.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + item.scienceSays.heading + '</h4>' +
-        formatText(item.scienceSays.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + item.whyItMatters.heading + '</h4>' +
-        formatText(item.whyItMatters.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">REFERENCES &amp; SOURCES</h4>' +
-        '<ul class="dossier-sources-list">' + sourcesHtml + '</ul>' +
-      '</div>' +
-      getBottomImageHtml(item.articleBottomImage, item.title) +
-    '</div>';
+  let sectionsHtml = '';
+  if (item.sections && item.sections.length) {
+    sectionsHtml = item.sections.map(sec => `
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${sec.heading}</h4>
+        ${formatText(sec.content)}
+      </div>
+    `).join('');
+  }
+
+  modalBox.innerHTML = `
+    <button class="modal-close-btn" aria-label="Close">&times;</button>
+    <div class="modal-header-section">
+      <span class="modal-pretitle">${item.badge}</span>
+      <h2 class="modal-title">${item.title}</h2>
+      <p class="modal-viet-subtitle">${item.vietnameseName} &mdash; ${item.subtitle}</p>
+    </div>
+    <div class="modal-body-content">
+      ${sectionsHtml}
+      ${sourcesHtml}
+      ${getBottomImg(item.articleBottomImage, item.title)}
+    </div>
+  `;
 
   modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden'; // Prevent background scroll-bleed
 }
 
-// Render cards and filter buttons on Stories page
-function initStoriesPage() {
-  var container = document.getElementById('stories-grid-container');
+// Stories Page Listing & Filtering
+function initStories() {
+  const container = document.getElementById('stories-grid-container');
   if (!container || typeof VNFOLKS_DATA === 'undefined') return;
 
-  renderStoriesList('all');
+  renderStories('all');
 
-  var filterBtns = document.querySelectorAll('.filter-btn');
-  for (var i = 0; i < filterBtns.length; i++) {
-    filterBtns[i].addEventListener('click', function () {
-      for (var j = 0; j < filterBtns.length; j++) {
-        filterBtns[j].classList.remove('active');
-      }
+  // Filter bar interactions
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
-      var category = this.getAttribute('data-filter');
-      renderStoriesList(category);
+      renderStories(this.dataset.filter);
     });
-  }
+  });
 
-  container.addEventListener('click', function (e) {
-    var btn = e.target.closest('.btn-read-story');
+  // Event delegation for reading full story details
+  container.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-read-story');
     if (btn) {
-      var storyId = btn.getAttribute('data-story-id');
-      showStoryModal(storyId);
+      openStoryModal(btn.dataset.storyId);
     }
   });
 }
 
-function renderStoriesList(category) {
-  var container = document.getElementById('stories-grid-container');
+function renderStories(filter) {
+  const container = document.getElementById('stories-grid-container');
   if (!container) return;
 
-  var allStories = VNFOLKS_DATA.stories;
-  var filtered = [];
+  const filtered = VNFOLKS_DATA.stories.filter(story => {
+    if (filter === 'all') return true;
+    if (filter === 'warnings') return story.category === 'warnings' || story.category === 'guardians';
+    return story.category === filter;
+  });
 
-  for (var i = 0; i < allStories.length; i++) {
-    var story = allStories[i];
-    if (category === 'all') {
-      filtered.push(story);
-    } else if (category === 'warnings') {
-      if (story.category === 'warnings' || story.category === 'guardians') {
-        filtered.push(story);
-      }
-    } else if (story.category === category) {
-      filtered.push(story);
-    }
-  }
-
-  container.innerHTML = '';
-
-  for (var k = 0; k < filtered.length; k++) {
-    var st = filtered[k];
-    var card = document.createElement('article');
-    card.className = 'story-card';
-    card.setAttribute('data-id', st.id);
-    card.setAttribute('data-category', st.category);
-
-    card.innerHTML = 
-      '<div class="story-card-media">' +
-        '<img src="' + st.image + '" alt="' + st.name + '" loading="lazy">' +
-      '</div>' +
-      '<div class="story-card-content">' +
-        '<span class="story-region-tag">' + st.region + '</span>' +
-        '<h3 class="story-card-title">' + st.name + '</h3>' +
-        '<span class="story-card-epithet">' + st.epithet + '</span>' +
-        '<p class="story-card-desc">' + st.atmosphericSummary + '</p>' +
-        '<div class="card-action-bar">' +
-          '<button class="btn-read-story" data-story-id="' + st.id + '">' +
-            '<span>Read The Story</span>' +
-          '</button>' +
-        '</div>' +
-      '</div>';
-
-    container.appendChild(card);
-  }
+  container.innerHTML = filtered.map(st => `
+    <article class="story-card" data-id="${st.id}" data-category="${st.category}">
+      <div class="story-card-media">
+        <img src="${st.image}" alt="${st.name}" loading="lazy" />
+      </div>
+      <div class="story-card-content">
+        <span class="story-region-tag">${st.region}</span>
+        <h3 class="story-card-title">${st.name}</h3>
+        <span class="story-card-epithet">${st.epithet}</span>
+        <p class="story-card-desc">${st.atmosphericSummary}</p>
+        <div class="card-action-bar">
+          <button class="btn-read-story" data-story-id="${st.id}">
+            <span>Read Story</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join('');
 }
 
-// Show modal popup for stories
-function showStoryModal(storyId) {
-  var story = null;
-  for (var i = 0; i < VNFOLKS_DATA.stories.length; i++) {
-    if (VNFOLKS_DATA.stories[i].id === storyId) {
-      story = VNFOLKS_DATA.stories[i];
-      break;
-    }
-  }
+function openStoryModal(id) {
+  const story = VNFOLKS_DATA.stories.find(s => s.id === id);
   if (!story) return;
 
-  var modal = document.getElementById('story-modal');
-  var modalBox = modal.querySelector('.modal-window');
+  const modal = document.getElementById('story-modal');
+  const modalBox = modal.querySelector('.modal-window');
 
-  modalBox.innerHTML = 
-    '<button class="modal-close-btn" aria-label="Close">&times;</button>' +
-    '<div class="modal-header-section">' +
-      '<span class="modal-pretitle">' + story.region + '</span>' +
-      '<h2 class="modal-title">' + story.name + '</h2>' +
-      '<p class="modal-viet-subtitle">' + story.vietnameseName + ' &mdash; ' + story.epithet + '</p>' +
-    '</div>' +
-    '<div class="modal-body-content">' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + story.legend.heading + '</h4>' +
-        formatText(story.legend.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + story.origins.heading + '</h4>' +
-        formatText(story.origins.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + story.culturalContext.heading + '</h4>' +
-        formatText(story.culturalContext.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + story.whatReflects.heading + '</h4>' +
-        formatText(story.whatReflects.content) +
-      '</div>' +
-      '<div class="dossier-block">' +
-        '<h4 class="dossier-heading">' + story.relatedBeliefs.heading + '</h4>' +
-        formatText(story.relatedBeliefs.content) +
-      '</div>' +
-      getBottomImageHtml(story.articleBottomImage, story.name) +
-    '</div>';
+  let sectionsHtml = '';
+  if (story.sections && story.sections.length) {
+    sectionsHtml = story.sections.map(sec => `
+      <div class="dossier-block">
+        <h4 class="dossier-heading">${sec.heading}</h4>
+        ${formatText(sec.content)}
+      </div>
+    `).join('');
+  }
+
+  modalBox.innerHTML = `
+    <button class="modal-close-btn" aria-label="Close">&times;</button>
+    <div class="modal-header-section">
+      <span class="modal-pretitle">${story.region}</span>
+      <h2 class="modal-title">${story.name}</h2>
+      <p class="modal-viet-subtitle">${story.vietnameseName} &mdash; ${story.epithet}</p>
+    </div>
+    <div class="modal-body-content">
+      ${sectionsHtml}
+      ${getBottomImg(story.articleBottomImage, story.name)}
+    </div>
+  `;
 
   modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden'; // Lock background scrolling
 }
 
-// Modal closing helpers
+// Global Modal Dismissal
 function initModals() {
-  var modals = document.querySelectorAll('.modal-overlay');
-
-  for (var i = 0; i < modals.length; i++) {
-    modals[i].addEventListener('click', function (e) {
-      if (e.target.closest('.modal-close-btn') || e.target === this) {
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target.closest('.modal-close-btn') || e.target === overlay) {
         closeModals();
       }
     });
-  }
+  });
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      closeModals();
-    }
+  // ESC key listener
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModals();
   });
 }
 
 function closeModals() {
-  var modals = document.querySelectorAll('.modal-overlay');
-  for (var i = 0; i < modals.length; i++) {
-    modals[i].classList.remove('active');
-  }
+  document.querySelectorAll('.modal-overlay').forEach(modal => {
+    modal.classList.remove('active');
+  });
   document.body.style.overflow = '';
 }
