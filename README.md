@@ -20,7 +20,7 @@ I deployed it at: **[https://vnfolk.vercel.app/](https://vnfolk.vercel.app/)**
 - CSS3 
 - JavaScript 
 
-### About the project 💭
+### About the project 
 Living in Vietnam—and Asia more broadly—I grew up hearing countless oral folktales from my grandparents, and I drew inspiration from those stories to create this website as a way to tell people about my culture.
 
 I built **VN FOLKS** to explore front-end web development while preserving Vietnamese cultural storytelling. Instead of a generic portfolio, I wanted to create an immersive digital archive that connects traditional folklore with modern scientific explanations. 
