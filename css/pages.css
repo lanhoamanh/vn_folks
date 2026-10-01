@@ -4,6 +4,7 @@
   padding: 65px 0 50px;
   text-align: center;
   position: relative;
+  z-index: 4;
   border-bottom: 1px solid rgba(132, 89, 43, 0.25);
   background-color: #ebddc3;
 }
@@ -57,7 +58,10 @@
 
 /* Explore Grid Section */
 .explore-main-section {
+  position: relative;
+  z-index: 4;
   padding: 60px 0 80px;
+  background-color: #f4ead8;
 }
 
 .explore-grid {
@@ -66,19 +70,20 @@
   gap: 38px;
 }
 
+/* MAIN CARDS PERMANENT 1PX BLACK BORDER & NO HOVER EFFECT (Rule 1) */
 .explore-card {
   background-color: #f4ead8;
-  border: 1px solid rgba(132, 89, 43, 0.35);
+  border: 1px solid #000000 !important;
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: none !important;
 }
 
 .explore-card:hover {
-  transform: translateY(-6px);
-  border-color: #743014;
-  box-shadow: 0 12px 28px rgba(68, 45, 28, 0.14);
+  border: 1px solid #000000 !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .explore-card-media {
@@ -87,7 +92,7 @@
   background-color: #20140c;
   overflow: hidden;
   position: relative;
-  border-bottom: 1px solid rgba(132, 89, 43, 0.3);
+  border-bottom: 1px solid #000000;
 }
 
 .explore-card-media img,
@@ -95,27 +100,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  filter: none !important;
 }
 
-.explore-card:hover .explore-card-media img,
-.explore-card:hover .explore-card-media svg {
-  transform: scale(1.03);
-}
-
+/* RESTYLE CATEGORY BADGES ON TOP OF IMAGES (Rule 2) */
 .card-badge {
   position: absolute;
   top: 12px;
   right: 12px;
-  background-color: rgba(68, 45, 28, 0.88);
-  backdrop-filter: blur(4px);
-  color: #e8d1a7;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  padding: 2px 8px !important;
+  font-size: 0.8rem !important;
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.78rem;
-  letter-spacing: 1.8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 5px 12px;
-  border: 1px solid rgba(232, 209, 167, 0.4);
+  backdrop-filter: none !important;
+  box-shadow: none !important;
   z-index: 2;
 }
 
@@ -181,15 +184,14 @@
 /* Stories Page Layout */
 body.dark-stories-page {
   background-color: #1b110a;
-  background-image: 
-    radial-gradient(circle at 10% 10%, rgba(116, 48, 20, 0.15) 0, transparent 40%),
-    radial-gradient(circle at 90% 90%, rgba(68, 45, 28, 0.2) 0, transparent 50%),
-    linear-gradient(180deg, #18100a 0, #120905 100%);
   color: #e8d1a7;
 }
 
 .stories-main-section {
+  position: relative;
+  z-index: 4;
   padding: 45px 0 85px;
+  background-color: #1b110a;
 }
 
 .filter-bar-wrapper {
@@ -227,19 +229,20 @@ body.dark-stories-page {
   gap: 34px;
 }
 
+/* STORIES SECTION CARDS - PERMANENT WHITE BORDER & NO HOVER STATE (Rule 3) */
 .story-card {
   background-color: #251810;
-  border: 1px solid rgba(157, 145, 103, 0.25);
+  border: 1px solid #ffffff !important;
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: none !important;
 }
 
 .story-card:hover {
-  transform: translateY(-6px);
-  border-color: #e8d1a7;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .story-card-media {
@@ -247,7 +250,7 @@ body.dark-stories-page {
   height: 220px;
   background-color: #0c0704;
   overflow: hidden;
-  border-bottom: 1px solid rgba(157, 145, 103, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .story-card-media img,
@@ -255,12 +258,7 @@ body.dark-stories-page {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.story-card:hover .story-card-media img,
-.story-card:hover .story-card-media svg {
-  transform: scale(1.03);
+  filter: none !important;
 }
 
 .story-card-content {
@@ -328,6 +326,8 @@ body.dark-stories-page {
 
 /* About Page */
 .about-manifesto-hero {
+  position: relative;
+  z-index: 4;
   padding: 70px 0 50px;
   background-color: #ebddc3;
   border-bottom: 1px solid rgba(132, 89, 43, 0.3);
@@ -339,6 +339,9 @@ body.dark-stories-page {
   text-align: center;
   position: relative;
   padding: 0 15px;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .manifesto-quote-block blockquote {
@@ -351,17 +354,22 @@ body.dark-stories-page {
 }
 
 .about-sections-wrapper {
+  position: relative;
+  z-index: 4;
   padding: 70px 0;
+  background-color: #f4ead8;
 }
 
 .about-article {
   margin-bottom: 60px;
   padding-bottom: 45px;
-  border-bottom: 1px solid rgba(132, 89, 43, 0.2);
+  border: none !important;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(132, 89, 43, 0.2) !important;
 }
 
 .about-article:last-of-type {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 .article-header {
@@ -420,7 +428,6 @@ body.dark-stories-page {
   margin: auto;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-  animation: fadeIn 0.35s ease forwards;
 }
 
 .dark-modal {
@@ -528,9 +535,6 @@ body.dark-stories-page {
   text-transform: uppercase;
   color: #743014;
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .dark-modal .dossier-heading {
@@ -644,13 +648,12 @@ body.dark-stories-page {
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid rgba(132, 89, 43, 0.35);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
   display: block;
+  filter: none !important;
 }
 
 .dark-modal .article-bottom-image {
   border-color: rgba(232, 209, 167, 0.28);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .article-bottom-caption {
@@ -659,7 +662,6 @@ body.dark-stories-page {
   font-style: italic;
   margin-top: 14px;
   opacity: 0.85;
-  letter-spacing: 0.8px;
   color: #442d1c;
 }
 
@@ -667,7 +669,6 @@ body.dark-stories-page {
   color: #e8d1a7;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .explore-grid,
   .stories-grid {
