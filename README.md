@@ -3,7 +3,7 @@
 ### Welcome to VN FOLKS, an interactive digital archive exploring Vietnamese folklore, cultural traditions, supernatural legends, and real-world science.
 
 
-I deployed it at: **[https://vnfolk.vercel.app/](https://vnfolk.vercel.app/)**
+I deployed it at: **[https://vnfolks.vercel.app/](https://vnfolks.vercel.app/)**
 
 ![Screenshot 1](./assets/screenshort1.png)
 
