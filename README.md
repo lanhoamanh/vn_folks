@@ -5,15 +5,12 @@
 
 I deployed it at: **[https://vnfolks.vercel.app/](https://vnfolks.vercel.app/)**
 
-![Screenshot 1](./assets/screenshort1.jpg)
+![Screenshot 1](./assets/screenshort1.png)
 
 
 ###  Features:
-- **The Four Lenses:** Examine supernatural stories through Oral Folklore, Historical Context, Human Perception, and Modern Science.
-- **Folklore Archive & Stories:** In-depth articles on iconic tales like *Bóng Đè*, *Solar & Lunar Eclipses*, *Ông Ba Bị*, *Ma Đói*, and *Ma Lôn*.
-- **Vintage Paper Aesthetic:** Custom parchment-style design paired with clean monochrome framing and typography.
-- **Interactive Modals:** Clickable archive cards that open rich, detailed story pop-ups.
-- **Smart Navbar:** Smooth navigation detecting page sections cleanly.
+- Examine and analyze folktales and paranormal phenomena through four comparative lenses: Oral Folklore, Historical Context, Human Perception, and Modern Science.
+- Folklore Archive & Stories: Provides detailed articles and pop-up information windows regarding legends and folklore-related phenomena.
 
 ### Built with:
 - HTML5
