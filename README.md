@@ -5,7 +5,7 @@
 
 I deployed it at: **[https://vnfolks.vercel.app/](https://vnfolks.vercel.app/)**
 
-![Screenshot 1](./assets/screenshort1.png)
+![Screenshot 1](./assets/screenshort1.jpg)
 
 
 ###  Features:
